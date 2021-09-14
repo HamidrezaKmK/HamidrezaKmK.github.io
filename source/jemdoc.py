@@ -671,6 +671,7 @@ def replacelinks(b):
   m = r.search(b)
   while m:
     m1 = m.group(1).strip()
+    print("**",m1,"**")
 
     if m1[0] == '/':
         option = ''

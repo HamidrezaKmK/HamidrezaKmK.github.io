@@ -10,16 +10,24 @@ Research Assistant\n
 [https://www.mpi-inf.mpg.de/home/ Max Planck Institute of Informatics]
 
 Contact: hamidrezakamkari (at) gmail (dot) com \n
-
 ~~~
 
 == About Hamidreza
-I am a Bachelors student at Sharif Unviersity of technology [ Computer Science & Engineering Department] and research assistant in both Aalto university
+I am a Bachelors student at [http://www.en.sharif.edu/ Sharif Unviersity of technology] [http://ce.sharif.edu/ Computer Science & Engineering Department] and research assistant in both Aalto university and MaxPlanck institute of Informatics.
 
+My topics of interest involve optimization and computational learning theory as well as deep-learning and applications of machine learning especially in bio-informatics.
+
+== Research Experience
+
+I am currently researching over two topics:
+. Semi-Definite Programming using a natural dynamic known as the Slime Mold. In that, we have proposed a new algorithm inspired from a natural dynamic which is able to solve positive linear programs. I have started my research on this from 2020 under the supervision of [https://people.mpi-inf.mpg.de/~karrenba/ Andreas Karrenbauer] and published a paper [https://www.google.com/ here]. The topic involves advanced linear algebra as well as a good understanding of dynamical system and convex optimization.
+. RNA inverse folding using Graph Neural Networks. In that, we try to design an RNA sequence which folds into a certain given secondary structrure. The problem of RNA sequence design is one of primary importance in bio-engineering and we have tried to achieve this via a data-driven approach. I have started this research recently as a summer intern under the supervision of [https://people.aalto.fi/pekka.orponen Pekka Orponen]. The topic involves a baseline faimilarity of RNA structures and in-depth understanding of Neural Network architectures and machine learning in general.
+
+You may find more detailed information about my research [research.html here].
 == Honors and Awards
-
-I have a rich background in Competetive Programming as well as theoretical Computer Science. Participating in many competetive programming contests, I have achieved two national Olympiad medals and have receieved many other awards:
-. Gold Medal at ACM-ICPC regional contests [
-. Bronze medal at Asia-Pasific Informatics Olympiad [2019]
-. Gold metal at InfoCup [2019]
-
+I have a rich background in Competetive Programming as well as theoretical Computer Science. Participating in many algorithmic contests, I have achieved two national Olympiad medals and have receieved other awards:
+. Gold Medal at ACM-ICPC regional contests 
+. Bronze medal at Asia-Pasific Informatics Olympiad (APIO 2019)
+. Gold medal at InfoCup 2019
+. Iranian National Olympiad in Informatics Gold Medal (INOI 2018)
+. Iranian National Olympiad in Informatics Silver Medal (INOI 2017)
