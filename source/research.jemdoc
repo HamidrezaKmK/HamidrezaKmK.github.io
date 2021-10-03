@@ -1,2 +1,38 @@
 # jemdoc: menu{MENU}{research.html}, showsource
 = Research
+
+== RNA Sequence Design using Graph Neural Networks
+
+RNA is one of the major classes of information-carrying biopolymers in the cell of living organisms and
+recent studies revealed a key role in regulatory processes and transcription control, which have also been connected to certain diseases. Therefore, engineering of RNA molecules is of growing importance with applications ranging from biotechnology and medicine to synthetic biology. The functional properties of an RNA is derived from their secondary structure. Given a secondary structure, we aim to predict sequences that fold into a target minimum free energy secondary structure, while considering various constraints. This problem known as *RNA Inverse Folding* or *RNA Sequence Design*, can be regarded as a combinatorial optimization problem and in our work we aim to solve this using a data driven approach.
+
+~~~
+{}{raw}
+<figure>
+  <img src="./images/autoregressiveDec.png" alt="Autoregression" style="width:100%">
+</figure>
+~~~
+
+Specifically, we present a Graph Neural Network (GNN) based model that learns an autoregressive decomposition of the distribution of neucleotides given a certain secondary structure. The structure is embedded using our GNN and by carefully sampling from this generative model we can obtain the correct solution to the RNA inverse folding problem. 
+Our model, while still improving, has proven to yield good results on RNA inverse folding datasets such as /PseudoBase\+\+\+/, /Rfam-Tenda/, and /Eterna100/.
+
+~~~
+{}{raw}
+<p style="color:red">Mehdi Saman Booy, Hamidreza Kamkari, Alexander Ilin, and Pekka Orponen</p>
+~~~
+
+== Semidefinite Programming using a Physarum Based Dynamic
+~~~
+{}{img_left}{./images/convexOpt.jpg}{Semidefinite programming}{200}{200}
+
+Physarum Polycephalum is a Slime mold that can solve the shortest path problem. A mathematical model based on the Physarum's behavior known as the Physarum Directed Dynamics can solve positive linear programs. In our work, we have proposed a Physarum based dynamic introduced a new way to solve positive Semi-Definite Programming (SDP) problems. Empirical results from our implementation suggest that this extension of the dynamic can solve the positive SDP showing that the nature-inspired algorithm can solve one of the hardest problems in the polynomial domain.
+~~~
+
+Formally, for a given SDP in the standard format we solve the problem by presenting a matrix function $X(t)$ following a certain dynamic that converges to the optimum solution of such an SDP. This dynamic was obtained from careful curation and fine-tuning of its LP counterpart. In our work, we show theoretical evidence to prove the soundness of the dynamic as well as provide strong empirical findings that support our ideas.
+
+~~~
+{}{raw}
+<p style="color:red">Andreas Karrenbauer, Hamidreza Kamkari, and Mohammad Amin Sharifi <span style="color:black"> (<a href="???">PDF</a>) (<a href="https://github.com/HamidrezaKmK/PhysarumSDPSolver">Code</a>)</span> </p> 
+~~~
+
++MLA is here!+
