@@ -4,6 +4,8 @@
 ~~~
 {}{img_left}{./images/profile.jpg}{Hamidreza Kamkari}{200}{200}
 
+Bachelor Student\n
+[http://www.en.sharif.edu/ Sharif University of Technology]
 
 Research Assistant\n
 [https://www.aalto.fi/en Aalto university]\n
@@ -12,22 +14,26 @@ Research Assistant\n
 Contact: hamidrezakamkari (at) gmail (dot) com \n
 ~~~
 
-== About Hamidreza
-I am a Bachelors student at [http://www.en.sharif.edu/ Sharif Unviersity of technology] [http://ce.sharif.edu/ Computer Science & Engineering Department] and research assistant in both Aalto university and MaxPlanck institute of Informatics.
+== About Me
+I am a Bachelors student at [http://www.en.sharif.edu/ Sharif University of technology] [http://ce.sharif.edu/ Computer Science & Engineering Department] and research assistant in both Aalto University and Max-Planck Institute of Informatics. I have been pursuing my career and studies in fields related to computer science.
+My topics of interest involve applying topics in optimization, algorithm engineering, stochastic algorithm design, and statistics, and I have decent familiarity and experience with data science and machine learning; specifically applications of deep learning in computational biology.
 
-My topics of interest involve optimization and computational learning theory as well as deep-learning and applications of machine learning especially in bio-informatics.
+As a person who has participated in multiple competitive programming contests as a high school student, I have accumulated much experience in the basics of creative algorithm design and have pursued computer science ever since. As of recent years, I have specialized in research and participated in two major projects revolving around the aforementioned topics of interest.
 
 == Research Experience
 
-I am currently researching over two topics:
-. Semi-Definite Programming using a natural dynamic known as the Slime Mold. In that, we have proposed a new algorithm inspired from a natural dynamic which is able to solve positive linear programs. I have started my research on this from 2020 under the supervision of [https://people.mpi-inf.mpg.de/~karrenba/ Andreas Karrenbauer] and published a paper [https://www.google.com/ here]. The topic involves advanced linear algebra as well as a good understanding of dynamical system and convex optimization.
-. RNA inverse folding using Graph Neural Networks. In that, we try to design an RNA sequence which folds into a certain given secondary structrure. The problem of RNA sequence design is one of primary importance in bio-engineering and we have tried to achieve this via a data-driven approach. I have started this research recently as a summer intern under the supervision of [https://people.aalto.fi/pekka.orponen Pekka Orponen]. The topic involves a baseline faimilarity of RNA structures and in-depth understanding of Neural Network architectures and machine learning in general.
+I am currently researching on two topics:
+. *RNA inverse folding using Graph Neural Networks*: Our team tries to design an RNA sequence that folds into a certain given secondary structure. The problem of RNA sequence design is of crucial importance in bio-engineering. The problem is also known as RNA inverse folding we have tried to achieve results via a data-driven approach. I have started this research recently as a summer intern under the supervision of [https://people.aalto.fi/pekka.orponen Pekka Orponen]. The topic involves a baseline familiarity of RNA structures and an in-depth understanding of Graph Neural Network architectures and machine learning basics.
+. *Semi-Definite Programming using a natural dynamic known as the Slime Mold*: We have proposed a new algorithm inspired by a natural dynamic that is able to solve positive linear programs. I have started my research on this in 2020 under the supervision of [https://people.mpi-inf.mpg.de/~karrenba/ Andreas Karrenbauer] and published a paper [https://www.google.com/ here]. The topic involves advanced linear algebra as well as a good understanding of dynamical systems and convex optimization.
+- MLA is here!
 
 You may find more detailed information about my research [research.html here].
+
 == Honors and Awards
-I have a rich background in Competetive Programming as well as theoretical Computer Science. Participating in many algorithmic contests, I have achieved two national Olympiad medals and have receieved other awards:
-. Gold Medal at ACM-ICPC regional contests 
-. Bronze medal at Asia-Pasific Informatics Olympiad (APIO 2019)
-. Gold medal at InfoCup 2019
+I have a rich background in Competitive Programming as well as theoretical Computer Science. Participating in many algorithmic contests as a high school student and first-year college undergraduate, I have achieved two national Olympiad medals and have received many other awards:
+. [http://icpc.sharif.edu/2018/scoreboard/ Gold Medal at ACM-ICPC regional contests] 
+. [https://apio2018.ru/results/official-contest/ Bronze medal at Asia-Pasific Informatics Olympiad (APIO 2019)]
+. [https://www.info1cup.com/archive/2018/International_Round_Ranking.pdf Gold medal at InfoCup 2019]
 . Iranian National Olympiad in Informatics Gold Medal (INOI 2018)
 . Iranian National Olympiad in Informatics Silver Medal (INOI 2017)
+
