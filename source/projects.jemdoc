@@ -13,7 +13,7 @@ From a technical perspective, DeepDDR facilitates Graph Neural Networks and mult
 
 ~~~
 {}{raw}
-<p style="color:red">Hamidreza Kamkari, and Karim Abbasi</p><span style="color:black">(Will provide more details upon individual request before submission)</span>
+<p style="color:red">Hamidreza Kamkari, Karim Abbasi</p><span style="color:black">(Will provide more details upon individual request before submission)</span>
 ~~~
 
 
@@ -28,7 +28,7 @@ We investigate the behavior of the induced dynamics theoretically and experiment
 
 ~~~
 {}{raw}
-<p style="color:red">Andreas Karrenbauer, Hamidreza Kamkari, and Mohammad Amin Sharifi <span style="color:black"> (<a href="https://arxiv.org/abs/2111.02291">PDF</a>) (<a href="https://github.com/HamidrezaKmK/PhysarumSDPSolver">Code</a>)</span> </p> 
+<p style="color:red">Yuan Gao, Hamidreza Kamkari, Andreas Karrenbauer, Kurt Mehlhorn, Mohammadamin Sharifi<span style="color:black"> (<a href="https://arxiv.org/abs/2111.02291">PDF</a>) (<a href="https://github.com/HamidrezaKmK/PhysarumSDPSolver">Code</a>)</span> </p> 
 ~~~
 
 == ML-Mnemonist
@@ -66,7 +66,7 @@ In this work, we have addressed the complexity of fine-tuning bias terms in a fi
 
 ~~~
 {}{raw}
-<p style="color:red">Andreas Karrenbauer, Hamidreza Kamkari, and Karl Bringmann</p>
+<p style="color:red">Andreas Karrenbauer, Hamidreza Kamkari, Karl Bringmann</p>
 ~~~
 
 == RNA Sequence Design using Graph Neural Networks
@@ -86,7 +86,7 @@ Our model, while still improving, has proven to yield good results on RNA invers
 
 ~~~
 {}{raw}
-<p style="color:red">Mehdi Saman Booy, Hamidreza Kamkari, Alexander Ilin, and Pekka Orponen</p>
+<p style="color:red">Mehdi Saman Booy, Hamidreza Kamkari, Alexander Ilin, Pekka Orponen</p>
 ~~~
 
 
