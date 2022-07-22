@@ -1,0 +1,77 @@
+# jemdoc: menu{MENU}{work-experience.html}, showsource
+= Work Experience
+
+In the last year of my higher secondary education, before graduating from high school, I started teaching as a part-time career for two years. For the most part, I taught high school students who were enthusiastic about topics in computer science and competitive programming. In turn, as a former national Olympiad in Informatics gold medal, I gained valuable experience communicating with students and preparing competitive programming contests for them. Consequently, this led me to choose Computer Science & Engineering as my major field of study at the university. Additionally, I was chosen as an official member of the National Olympiad in Informatics committee helping students in my home country to study computer science, and as a side-work created many online content and courses in this regard.
+
+Additionally, I started working as a Machine Learning Engineer at Fanap company in Iran. During my work, I gained valuable insights into the industry and worked on an AI-based computer vision project which honed my technical expertise in developing and deploying machine learning models.
+
+== Industrial Research
+~~~
+{}{raw}
+<ul>
+  <li>
+  <p style="text-align:left;">
+	Machine Learning Engineer at Fanap R&D
+  <span style="float:right;"> 
+        <em> January 2022 - Ongoing </em>
+    </span>
+	</p>
+  </li>
+  <p>
+  Computer-aided diagnosis has become widespread in dental applications and with the advent of data-driven approaches in dealing with radiographic images, machine learning models are being deployed 
+  in order to help dentists in the visual representation of images as well as aiding them in their diagnosis process. During my experience with Fanap, I experimented with U-Net type architectures for
+  panoramic dental image correction and tooth segmentation based upon Mask-RCNN type architectures. Our results demonstrate our capabilities 
+  in restoring super exposed dental images and also the ability to accurately segment teeth and dental augmentations performed on the patient.
+  </p>
+</ul>
+~~~
+
+== Technical Staff
+~~~
+{}{raw}
+<ul>
+  <li>
+  <p style="text-align:left;">
+  Worked as technical staff for Python client Sharif <bf>AI Challenge</bf> national contests.
+    <span style="float:right;"> 
+        <em> January 2020 </em>
+    </span>
+  </p>
+  </li>
+  
+  <li>
+  <p style="text-align:left;">
+  Staff at organizing <a href="https://wss.ce.sharif.ir/"> Winter Seminar Series (WSS) </a>.
+  <span style="float:right;"> 
+        <em> December 2019 </em>
+    </span>
+	</p>
+  </li>
+  
+</ul>
+~~~
+
+== Mentorship
+- Teaching creative algorithm design as well as basics of data science to employees of computer science-related companies in MAPSA boot camp.
+- Computer Olympiad Teacher in well-known Iranian high schools as well as a mentor at IOI preparation camp for [https://ioi2019.az/ International Olympiad in Informatics held in Baku, Azarbaijan]. [./docs/simurgh-certificate.png (certificate)]
+- Leader of Quera College content creation team in /Quera/ IT company. My work involved creating online courses that focus on the basics of programming as well as creative algorithm design. I and my colleagues created two online courses on /Basics of Programming/ and /Advanced Design of Algorithms and Data-structures/ that were used nationwide with almost 4000 participants. [./docs/certificate-quera.jpg (certificate)]
+
+
+== Olympiad
+~~~
+{}{raw}
+<ul>
+  <li>
+  <p style="text-align:left;">
+  Official Member of <a href="https://ioinformatics.org/journal/v11si_2017_25_33.pdf"> National Olympiad in Informatics Committee (INOI) </a>.
+  <span style="float:right;"> 
+        <em> September 2020 - Present </em>
+    </span>
+	</p>
+  </li>
+</ul>
+~~~
+
+
+
+

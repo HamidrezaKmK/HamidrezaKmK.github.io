@@ -1,0 +1,160 @@
+# jemdoc: menu{MENU}{academic-experience.html}, showsource
+= Academic Experience
+
+During my academic studies, I worked with many faculty members of my home university as a teaching assistant in courses such as algorithms and data structures; probabilities, and statistics; artificial intelligence. I also gained research experience as an intern two times at Max Planck Institute of Informatics and once at Aalto University.
+
+== Teaching Assistance
+~~~
+{}{raw}
+<ul>
+  <li>
+  <p style="text-align:left;">
+  (CE40417) Artificial Intelligence course <a href="http://blogs.bu.edu/mhrohban/"> Mohammad Hossein Rohban </a>
+    <span style="float:right;"> 
+        <em> September 2021 - January 2022 </em>
+    </span>
+	</p>
+  </li>
+  
+  <li>
+  <p style="text-align:left;">
+  (CE40254) <bf> Head </bf> of Data Structure and Algorithms course <a href="http://sharif.edu/~ghodsi/"> Mohammad Ghodsi </a>
+    <span style="float:right;"> 
+        <em> January 2021 - June 2021 </em>
+    </span>
+	</p>
+  </li>
+  
+  <li>
+  <p style="text-align:left;">
+  (CE40417) Artificial Intelligence course <a href="http://blogs.bu.edu/mhrohban/"> Mohammad Hossein Rohban </a>
+    <span style="float:right;"> 
+        <em> January 2021 - June 2021 </em>
+    </span>
+	</p>
+  </li>
+  
+  <li>
+  <p style="text-align:left;">
+  (CE40181) Probability and Statistics course <a href="https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en"> Ali Sharifi-Zarchi </a>
+    <span style="float:right;"> 
+        <em> September 2020 - January 2021 </em>
+    </span>
+	</p>
+  </li>
+  
+  <li>
+  <p style="text-align:left;">
+  (CE40115) Discrete Structures course <a href="https://scholar.google.com/citations?user=xuNJ-d8AAAAJ&hl=en"> Mohammad Ali Abam </a>
+    <span style="float:right;"> 
+        <em> January 2020 - June 2020 </em>
+    </span>
+	</p>
+  </li>
+  
+  <li>
+  <p style="text-align:left;">
+  (CE40354) Advanced Algorithm design course <a href="https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en"> Ali Sharifi-Zarchi </a>
+    <span style="float:right;"> 
+        <em> January 2020 - June 2020 </em>
+    </span>
+	</p>
+  </li>
+  
+  <li>
+  <p style="text-align:left;">
+  (CE40254) Data structure and Algorithms course <a href="https://scholar.google.com/citations?user=TNfL9SIAAAAJ&hl=en"> Mahdi Safarnejad-Boroujeni </a> 
+    <span style="float:right;"> 
+        <em> January 2020 - June 2020 </em>
+    </span>
+	</p>
+  </li>
+  
+  <li>
+  <p style="text-align:left;">
+  (CE40254) Data structure and Algorithms course <a href="https://scholar.google.com/citations?user=TNfL9SIAAAAJ&hl=en"> Mahdi Safarnejad-Boroujeni </a> 
+    <span style="float:right;"> 
+        <em> September 2019 - January 2020 </em>
+    </span>
+	</p>
+  </li>
+</ul>
+~~~
+
+== Research Assistance
+~~~
+{}{raw}
+<ul>
+  <li>
+  <p style="text-align:left;">
+  Thesis Project on Combination Therapy - Iran
+    <span style="float:right;"> 
+        <em> January 2022 - Ongoing </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  My thesis project revolved around applications of deep learning in combination therapy. Under the supervision of 
+  <a href="https://scholar.google.com/citations?user=bciVaS4AAAAJ&hl=en">Dr. Karim Abbasi</a>,
+  we obtained state-of-the-art results on predicting drug dose-response matrices of combinations in the NCI-ALMANAC cancer drug combination dataset. My work involved devising a suitable neural
+  architecture based on graph neural networks and attention mechanisms for embedding drugs, cell-lines, and combining them to obtain a drug dose response for a specific combination of compounds.
+  Results from our data-driven approach can be used for further pre-clinical and clinical studies to help develop new drugs with higher efficacy and less risk of adverse reaction. We are currently in 
+  the process of finalizing our report for submission.
+  </p>
+  <li>
+  <p style="text-align:left;">
+  Research Intern at Max Planck Institute of Informatics - Germany
+    <span style="float:right;"> 
+        <em> January 2022 - February 2022 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+	Obtaining fine-grained complexity bounds for optimizing neural networks is a well-known problem. In this internship under the supervision of 
+	<a href="https://people.mpi-inf.mpg.de/~karrenba/">Andreas Karrenbauer</a> 
+	and with the collaboration of 
+	<a href="https://people.mpi-inf.mpg.de/~kbringma/">Karl Bringmann</a>, we devised tight bounds for the complexity of fine-tuning bias terms of neural networks. This project has been passed on to a 
+	another team for further development; however, I can provide a write-up of our current findings if contacted directly.
+	</p>
+ 
+   
+   
+  <li>
+  <p style="text-align:left;">
+  Research Intern at Aalto University - Finland
+    <span style="float:right;"> 
+        <em> July 2021 - September 2021 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  Our team tried to design an RNA sequence that folds into a certain given secondary structure. The problem of RNA sequence design is of crucial importance in bio-engineering. The problem is also 
+  known as RNA inverse folding we have tried to achieve results via a data-driven approach. I started this project as a summer intern under the supervision of 
+  <a href="https://people.aalto.fi/pekka.orponen">Pekka Orponen</a>. The topic 
+  involved a baseline familiarity with RNA structures and an in-depth understanding of Graph Neural Network architectures and machine learning basics.
+  </p>
+  
+  
+  <li>
+  <p style="text-align:left;">
+  Research Intern at Max Planck Institute of Informatics - Germany
+    <span style="float:right;"> 
+        <em> August 2020 - July 2022</em>
+    </span>
+  </p>
+  </li>
+  <p>
+  As my first research internship, I started a project on Semi-Definite Programming using nature-inspired dynamics based on Slime Mold. Slime molds, also known as Physarum Polysephulum, are known to 
+  solve shortest path problems and a mathematical model driven by their behavior is able to solve linear programs. We started the project with the hope of creating a novel algorithm for 
+  Semi-Definite Programs. In the end, we developed a general recipe for optimization algorithms that can address semi-definite programming. We have also implemented our method and obtained great 
+  empirical results suggesting the power of our general framework. The work has currently been submitted to SODA2023, and we intend on packaging our solver as a Python solver. The final archived 
+  version of our findings are available at <a href="https://arxiv.org/abs/2111.02291">arXiv:2111.02291</a>.
+  </p>
+</ul>
+~~~
+
+
+
+
+
+
