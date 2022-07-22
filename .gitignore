@@ -1,0 +1,4 @@
+docs/CV/*.log
+docs/CV/*.aux
+docs/CV/*.out
+docs/CV/*.synctex.gz
