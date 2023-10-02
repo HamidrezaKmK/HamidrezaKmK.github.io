@@ -1,46 +1,166 @@
 # jemdoc: menu{MENU}{index.html}, showsource
-= Hamidreza Kamkari
+= Hamid Kamkari
 
 ~~~
 {}{img_left}{./images/profile.jpg}{Hamidreza Kamkari}{170}{220}
 
-Master of Science in Applied Computing at\n
+Machine Learning Research Intern at\n
+[https://layer6.ai/ Layer6 AI]
+
+Master of Science at\n
 [https://mscac.utoronto.ca/ University of Toronto]
 
 Bachelor of Science at\n
 [http://www.en.sharif.edu/ Sharif University of Technology]
 
-Contact: hamidk (at) cs (dot) toronto (dot) edu \n
+Contact: hamidrezakamkari [at] gmail [dot] com
 
 My [docs/CV/cv_hamidreza.pdf Curriculum Vitae]
 ~~~
 
 == About Me
-I am an M.Sc. student at the [https://web.cs.toronto.edu/ Computer Science Department] in University of Toronto and a B.Sc. graduate of Sharif University of Technology [http://ce.sharif.edu/ Computer Engineering Department]. During my academic career, I have been involved with research projects at Max-Planck Institute of Informatics, Aalto University, and Sharif University. Additionally, I have experienced industrial research as a Machine Learning engineer at Fanap company. I am also a former competitive programmer with experience in worldwide contests and a tutor at the National Committee of Olympiad in Informatics.
 
-In general, I am eager to inject my mathematical foundations into different applications of machine learning and computer science with a significant emphasis on pragmatics. My topics of interest involve observing machine learning and optimization from a fundamental angle and helping leverage methods in different domains. These domains include computer vision, reinforcement learning, and computational biology.
+An M.Sc. student delving into the nexus of machine learning fundamentals, focusing on AI reliability, explainability, and their ties to statistical foundations.
 
-== Research Highlights
-During my academic career, I had the opportunity to work with incredible people on different topics of computer science including applications of machine learning in different domains. I also obtained valuable research experience in fundamental concepts of optimization and discrete algorithm design. My research involves working with the faculty in my home university,  [https://www.mpi-inf.mpg.de/home/ Max Planck Institute of Technology], and [https://www.aalto.fi/en Aalto University]. In the following, I have underlined some of my most important research experiences. A full list of my projects can be found in more detail in the [projects.html Projects] section.
+Currently, I am interning at [https://layer6.ai/ *Layer6 AI*] as a Machine Learning Scientist, delving deep into the reliability of generative models.
+Specifically, I am looking at pathological behaviours that modern generative models exhibit when they are employed on Out-of-Distribution data that they
+have not seen before. Additionally, explaining such behaviours using a *Manifold Learning Theory* perspective fascinates me.
 
-. *Combination Therapy using Deep Learning*: 
-Drug combination is an emerging trend for discovering new drugs with more efficacy. In this project, we propose state-of-the-art deep learning models based on graph neural networks and attention mechanisms to predict drug dose responses for combinations of drugs in human cancer cell lines.
+As a competitive programmer with a zest for both the theoretical and practical aspects of computer science, I am always vigilant about integrating the best engineering practices in my work.
+My industry tenure as a Machine Learning Engineer has enriched my perspective, marrying theory with real-world applicability. 
+The engineering aspects of machine learning research are challenging as they involve continuous development of a codebase that might change drastically due to the inherent nature of research. 
+Therefore, in my free time, I enjoy thinking about and implementing new libraries that help research scientists in their research journey as well as seamlessly blending abstract concepts with real-world applications.
+
+== Highlights
+~~~
+{}{raw}
+<ul>
+  <li>
+  <p style="text-align:left;">
+  <strong> Explaining a Well-known Paradox in Deep Generative Models </strong> - <em> <a href="https://layer6.ai/">Layer6 AI</a> - Toronto, Canada </em>
+    <span style="float:right;"> 
+        <em> September 2023 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  We examine the paradox of deep generative models assigning high likelihoods to unseen data and propose a method to improve their reliability and theoretical understanding in out-of-distribution detection.
+  
+  <li>
+  <p style="text-align:left;">
+  <strong> Causal Discovery and Inference using Normalizing Flows</strong> - <em> <a href="https://vectorinstitute.ai/">Vector Institute</a> - Toronto, Canada </em>
+    <span style="float:right;"> 
+        <em> May 2023 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  Intending to provide the causal structure of a given dataset, we employ a novel neural network architecture that can learn to understand the underlying structure of the data-generating process. [<a href="https://github.com/vahidzee/ocdaf">Code</a>] [<a href="https://arxiv.org/abs/2308.07480">Paper</a>] 
+
+    <li>
+  <p style="text-align:left;">
+  <strong> Dysweep </strong> - <em> <a href="https://vectorinstitute.ai/">Vector Institute</a> - Toronto, Canada </em>
+    <span style="float:right;"> 
+        <em> January 2023 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
+  
+  <p style="text-align:left;">
+  <strong> Attention-based Drug Discovery </strong> - <em> <a href="https://vectorinstitute.ai/">Vector Institute</a> - Tehran, Iran </em>
+    <span style="float:right;"> 
+        <em> January 2023 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
+  
+  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
+  
+
+  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
+  <p style="text-align:left;">
+  <strong> RNA Sequence design using Graph Neural Networks </strong> - <em> <a href="https://vectorinstitute.ai/">Fanap</a> - Tehran, Iran </em>
+    <span style="float:right;"> 
+        <em> January 2023 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
+  
+  <p style="text-align:left;">
+  <strong> Semi-definite Programming using Slime Molds </strong> - <em> <a href="https://vectorinstitute.ai/">Fanap</a> - Tehran, Iran </em>
+    <span style="float:right;"> 
+        <em> January 2023 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
+  
+  
+</ul>
+~~~
+
+
+Additionally, my experiences span internships at Fanap, the [Max-Planck Institute of Informatics](https://www.mpi-inf.mpg.de/home), and [Aalto University](https://www.aalto.fi/en).
+
+Before this, I had the privilege of completing my B.Sc. at Sharif University of Technology's 
+Computer Science & Engineering Department. My academic journey has been filled with mathematical inquiries
+and insights. I've found joy in applying my mathematical intuition to machine learning,
+subtly connecting abstract concepts to tangible methods that can potentially employed in real-world scenarios.
+
+under the supervision of 
+[https://scholar.google.ca/citations?user=7CwOlvoAAAAJ&hl=en Jesse Cresswell] and 
+[https://scholar.google.com/citations?user=ilJgXHkAAAAJ&hl=en Rahul Krishnan], 
+where I delve into *deep generative models*, my current research interest. 
+
+My research isn't confined to just one area. I've managed to connect my understanding of machine learning with various 
+domains like computational biology and computer vision. It's an ongoing journey, one that continues to intrigue and challenge me.
+I've also had the chance to be part of research projects at renowned institutions such as [https://vectorinstitute.ai/ *Vector Institute*]
+
+
+The following contains some of my most important career highlights. For more details on the work I have done,
+please refer to my [projects.html Projects] section.
+
+. *Out of Distribution Detection on Likelihood-based Deep Generative Models*:
+
+. *Causal Discovery and Inference*:
+
+. *Deep Learning Configuration Manager and Sweeping Pipeline (Dysweep)*: 
+
+. *Combination Therapy using Transformer-based Architectures*: 
+Drug combination is an emerging trend for discovering new drugs with more efficacy. 
+In this project, we propose state-of-the-art deep learning models based on graph neural networks and attention mechanisms to predict drug dose 
+responses for combinations of drugs in human cancer cell lines.
 
 . *Semi-Definite Programming using Nature-Inspired Dynamics*: 
 We have proposed a new set of algorithms inspired by a natural dynamic, slime mold, that is able to solve positive Semi-Definite Programs (SDP). I started my research on this in 2020 under the supervision of [https://people.mpi-inf.mpg.de/~karrenba/ Andreas Karrenbauer] and continued developing the project throughout my undergraduate. After publishing multiple iterations of the work ([https://arxiv.org/abs/2111.02291 arXiv:2111.02291] - cs.ds - math.co), we have currently submitted our latest findings to SODA2023.
 
-. *Fine-Grained Complexity of Optimizing Bias Terms on Neural Networks*: 
-During my second internship at Max Planck Institute of Informatics, I embarked on a project which observed the fine-tuning problem of neural networks by manipulating bias terms.
+== Work Experience
 
-== Work Highlights
+When I'm not doing research, I enjoy engineering and developing software. 
+I have worked as a Machine Learning Engineer at [https://fanap.ir/en/aboutFanap Fanap] company and have been involved in developing a 
+deep learning-based dental image enhancement system. 
+I have also worked as a software engineer at [https://quera.org/ Quera].
+
 . *Machine Learning Engineer at Fanap*: During my work at Fanap company's R&D, we developed a method to enhance dental images using image restoring U-Net structures. We also deployed a tooth instance segmentation model based upon Mask-RCNN architectures.
 . *Mentorship at the National Olympiad in Informatics Committee*: I am a member of the National Olympiad in Informatics committee and we aim to leverage computer science in Iran and prepare students for competitive programming contests, especially the International Olympiad in Informatics (IOI).
 
-== Honors and Awards
-I have a rich background in Competitive Programming as well as theoretical Computer Science. Participating in many algorithmic contests as a high school student and first-year college undergraduate, I have achieved two national Olympiad medals and have received many other awards:
+== Competitive Programming
+In a somewhat different vein, I've tasted success in competitive programming and algorithm design, 
+even sharing my skills as a tutor. Participating in many algorithmic contests as a high school student and first-year college undergraduate, 
+I have achieved two national Olympiad medals and have received many other awards:
+
 . [http://icpc.sharif.edu/2018/scoreboard/ Gold Medal at ACM-ICPC regional contests] 
 . [https://apio2018.ru/results/official-contest/ Bronze medal at Asia-Pacific Informatics Olympiad (APIO 2019)] ([./docs/apio-certificate.png certificate])
 . [https://www.info1cup.com/archive/2018/International_Round_Ranking.pdf Gold medal at InfoCup 2019] ([./docs/infocup-certificate.png certificate])
 . Iranian National Olympiad in Informatics Gold Medal (INOI 2018)
 . Iranian National Olympiad in Informatics Silver Medal (INOI 2017)
+
+
 
