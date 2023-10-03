@@ -13,9 +13,7 @@ Master of Science at\n
 Bachelor of Science at\n
 [http://www.en.sharif.edu/ Sharif University of Technology]
 
-Contact: hamidrezakamkari [at] gmail [dot] com
-
-My [docs/CV/cv_hamidreza.pdf Curriculum Vitae]
+Contact: hamidrezakamkari (at) gmail (dot) com # My [docs/CV/cv_hamidreza.pdf Curriculum Vitae]
 ~~~
 
 == About Me
@@ -37,7 +35,7 @@ Therefore, in my free time, I enjoy thinking about and implementing new librarie
 <ul>
   <li>
   <p style="text-align:left;">
-  <strong> Explaining a Well-known Paradox in Deep Generative Models </strong> - <em> <a href="https://layer6.ai/">Layer6 AI</a> - Toronto, Canada </em>
+  <strong> Explaining a Popular Paradox in Deep Generative Models </strong> - <em> <a href="https://layer6.ai/">Layer6 AI</a> - Toronto, Canada </em>
     <span style="float:right;"> 
         <em> September 2023 </em>
     </span>
@@ -55,9 +53,10 @@ Therefore, in my free time, I enjoy thinking about and implementing new librarie
   </p>
   </li>
   <p>
-  Intending to provide the causal structure of a given dataset, we employ a novel neural network architecture that can learn to understand the underlying structure of the data-generating process. [<a href="https://github.com/vahidzee/ocdaf">Code</a>] [<a href="https://arxiv.org/abs/2308.07480">Paper</a>] 
+  Introduced a novel neural network architecture that can learn to understand the underlying structure of the data-generating process. This ultimately
+  helps us produce reliable and explainable models that can account for interventional distributions unseen in the training data. [<a href="https://github.com/vahidzee/ocdaf">Code</a>] [<a href="https://arxiv.org/abs/2308.07480">Paper</a>] 
 
-    <li>
+<li>
   <p style="text-align:left;">
   <strong> Dysweep </strong> - <em> <a href="https://vectorinstitute.ai/">Vector Institute</a> - Toronto, Canada </em>
     <span style="float:right;"> 
@@ -67,100 +66,46 @@ Therefore, in my free time, I enjoy thinking about and implementing new librarie
   </li>
   <p>
   An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
-  
-  <p style="text-align:left;">
-  <strong> Attention-based Drug Discovery </strong> - <em> <a href="https://vectorinstitute.ai/">Vector Institute</a> - Tehran, Iran </em>
-    <span style="float:right;"> 
-        <em> January 2023 </em>
-    </span>
-  </p>
-  </li>
-  <p>
-  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
-  
-  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
-  
 
-  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
+ <li> 
   <p style="text-align:left;">
-  <strong> RNA Sequence design using Graph Neural Networks </strong> - <em> <a href="https://vectorinstitute.ai/">Fanap</a> - Tehran, Iran </em>
+  <strong> Attention-based Drug Discovery </strong> - <em> <a href="https://ce.sharif.edu/">Sharif University</a> - Tehran, Iran </em>
     <span style="float:right;"> 
-        <em> January 2023 </em>
+        <em> June 2022 </em>
     </span>
   </p>
   </li>
   <p>
-  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
-  
+  Thesis leveraged attention mechanisms in deep learning to identify synergistic drug combinations for cancer research. 
+  Achieved a 1.5x accuracy boost in dose response prediction for the NCI-ALMANAC cancer drug database.
+<li>
   <p style="text-align:left;">
-  <strong> Semi-definite Programming using Slime Molds </strong> - <em> <a href="https://vectorinstitute.ai/">Fanap</a> - Tehran, Iran </em>
+  <strong> RNA Sequence design using Graph Neural Networks </strong> - <em> <a href="https://www.aalto.fi/en">Aalto University</a> - Espoo, Finland </em>
     <span style="float:right;"> 
-        <em> January 2023 </em>
+        <em> September 2021 </em>
     </span>
   </p>
   </li>
   <p>
-  An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
-  
-  
+  Designing beneficial RNA structures is challenging in biotechnology. 
+  We use reinforcement learning algorithms combined with graph neural networks to model and design RNA sequences, 
+  obtaining previously underexplored structures like RNA pseudo-knots.
+  <li>
+  <p style="text-align:left;">
+  <strong> Semi-definite Programming using Slime Molds </strong> - <em> <a href="https://www.mpi-inf.mpg.de/home">Max-Planck for Informatics</a> - Saarbrücken, Germany </em>
+    <span style="float:right;"> 
+        <em> June 2021 </em>
+    </span>
+  </p>
+  </li>
+  <p>
+  Inspired by the optimization dynamics of slime molds in nature, 
+  developed a mathematical dynamic that provably converges to the optimal solution for semi-definite programming problems.
+  [<a href="https://arxiv.org/abs/2111.02291">Paper</a>]
+
 </ul>
 ~~~
 
-
-Additionally, my experiences span internships at Fanap, the [Max-Planck Institute of Informatics](https://www.mpi-inf.mpg.de/home), and [Aalto University](https://www.aalto.fi/en).
-
-Before this, I had the privilege of completing my B.Sc. at Sharif University of Technology's 
-Computer Science & Engineering Department. My academic journey has been filled with mathematical inquiries
-and insights. I've found joy in applying my mathematical intuition to machine learning,
-subtly connecting abstract concepts to tangible methods that can potentially employed in real-world scenarios.
-
-under the supervision of 
-[https://scholar.google.ca/citations?user=7CwOlvoAAAAJ&hl=en Jesse Cresswell] and 
-[https://scholar.google.com/citations?user=ilJgXHkAAAAJ&hl=en Rahul Krishnan], 
-where I delve into *deep generative models*, my current research interest. 
-
-My research isn't confined to just one area. I've managed to connect my understanding of machine learning with various 
-domains like computational biology and computer vision. It's an ongoing journey, one that continues to intrigue and challenge me.
-I've also had the chance to be part of research projects at renowned institutions such as [https://vectorinstitute.ai/ *Vector Institute*]
-
-
-The following contains some of my most important career highlights. For more details on the work I have done,
-please refer to my [projects.html Projects] section.
-
-. *Out of Distribution Detection on Likelihood-based Deep Generative Models*:
-
-. *Causal Discovery and Inference*:
-
-. *Deep Learning Configuration Manager and Sweeping Pipeline (Dysweep)*: 
-
-. *Combination Therapy using Transformer-based Architectures*: 
-Drug combination is an emerging trend for discovering new drugs with more efficacy. 
-In this project, we propose state-of-the-art deep learning models based on graph neural networks and attention mechanisms to predict drug dose 
-responses for combinations of drugs in human cancer cell lines.
-
-. *Semi-Definite Programming using Nature-Inspired Dynamics*: 
-We have proposed a new set of algorithms inspired by a natural dynamic, slime mold, that is able to solve positive Semi-Definite Programs (SDP). I started my research on this in 2020 under the supervision of [https://people.mpi-inf.mpg.de/~karrenba/ Andreas Karrenbauer] and continued developing the project throughout my undergraduate. After publishing multiple iterations of the work ([https://arxiv.org/abs/2111.02291 arXiv:2111.02291] - cs.ds - math.co), we have currently submitted our latest findings to SODA2023.
-
-== Work Experience
-
-When I'm not doing research, I enjoy engineering and developing software. 
-I have worked as a Machine Learning Engineer at [https://fanap.ir/en/aboutFanap Fanap] company and have been involved in developing a 
-deep learning-based dental image enhancement system. 
-I have also worked as a software engineer at [https://quera.org/ Quera].
-
-. *Machine Learning Engineer at Fanap*: During my work at Fanap company's R&D, we developed a method to enhance dental images using image restoring U-Net structures. We also deployed a tooth instance segmentation model based upon Mask-RCNN architectures.
-. *Mentorship at the National Olympiad in Informatics Committee*: I am a member of the National Olympiad in Informatics committee and we aim to leverage computer science in Iran and prepare students for competitive programming contests, especially the International Olympiad in Informatics (IOI).
-
-== Competitive Programming
-In a somewhat different vein, I've tasted success in competitive programming and algorithm design, 
-even sharing my skills as a tutor. Participating in many algorithmic contests as a high school student and first-year college undergraduate, 
-I have achieved two national Olympiad medals and have received many other awards:
-
-. [http://icpc.sharif.edu/2018/scoreboard/ Gold Medal at ACM-ICPC regional contests] 
-. [https://apio2018.ru/results/official-contest/ Bronze medal at Asia-Pacific Informatics Olympiad (APIO 2019)] ([./docs/apio-certificate.png certificate])
-. [https://www.info1cup.com/archive/2018/International_Round_Ranking.pdf Gold medal at InfoCup 2019] ([./docs/infocup-certificate.png certificate])
-. Iranian National Olympiad in Informatics Gold Medal (INOI 2018)
-. Iranian National Olympiad in Informatics Silver Medal (INOI 2017)
 
 
 
