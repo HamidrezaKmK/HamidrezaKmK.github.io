@@ -18,16 +18,14 @@ Contact: hamidrezakamkari (at) gmail (dot) com # My [docs/CV/cv_hamidreza.pdf Cu
 
 == About Me
 
-An M.Sc. student delving into the nexus of machine learning fundamentals, focusing on AI reliability, explainability, and their ties to statistical foundations.
+Delving into the nexus of machine learning fundamentals, focusing on AI reliability, explainability, and their ties to statistical foundations.
 
 Currently, I am interning at [https://layer6.ai/ *Layer6 AI*] as a Machine Learning Scientist, delving deep into the reliability of generative models.
-Specifically, I am looking at pathological behaviours that modern generative models exhibit when they are employed on Out-of-Distribution data that they
-have not seen before. Additionally, explaining such behaviours using a *Manifold Learning Theory* perspective fascinates me.
+Specifically, I am looking at pathological behaviours that modern generative models exhibit from a *Manifold Learning Theory* perspective when they are employed on Out-of-Distribution data in the wild.
 
-As a competitive programmer with a zest for both the theoretical and practical aspects of computer science, I am always vigilant about integrating the best engineering practices in my work.
-My industry tenure as a Machine Learning Engineer has enriched my perspective, marrying theory with real-world applicability. 
-The engineering aspects of machine learning research are challenging as they involve continuous development of a codebase that might change drastically due to the inherent nature of research. 
-Therefore, in my free time, I enjoy thinking about and implementing new libraries that help research scientists in their research journey as well as seamlessly blending abstract concepts with real-world applications.
+As a competitive programmer passionate about computer science theory and practice, I prioritize integrating top engineering practices. 
+Recognizing the dynamic nature of machine learning research, I create libraries in my free time to support researchers and work on projects aimed at bridging the gap between abstract concepts of machine learning with real-world applications 
+in computer vision, healthcare, and computational biology.
 
 == Highlights
 ~~~
