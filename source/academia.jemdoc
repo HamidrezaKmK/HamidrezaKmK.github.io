@@ -58,25 +58,19 @@ Linear Algebra, (CE181) Fundamentals of Probability and Statistics, (CE354) Algo
   
 <li>
   <div style="text-align:left;">
-   Ordered Causal Discovery with Autoregressive Flows <em>  </em>
+   Ordered Causal Discovery with Autoregressive Flows 
     <span style="float:right;"> 
         <em> May 2023 </em>
     </span>
   </div>
   <div style="text-align:left; padding-top: 5px;"> 
-    <em> <a href="https://vectorinstitute.ai/"> Vector Insitute </a>, <a href="https://web.cs.toronto.edu/"> University of Toronto </a> - Toronto, Canada - (Under Review in AISTATS) </em>
+    <em> <a href="https://vectorinstitute.ai/"> Vector Insitute </a>, <a href="https://web.cs.toronto.edu/"> University of Toronto </a> - Toronto, Canada - (<a href="https://arxiv.org/abs/2308.07480">Paper</a>) </em>
   </div>
   </li>
   <br>
   <p>
- We propose OCDaf, a novel order-based method for learning causal graphs from observational data. 
- We establish the identifiability of causal graphs within multivariate heteroscedastic noise models, 
- a generalization of additive noise models that allow for non-constant noise variances. 
- Drawing upon the structural similarities between these models and affine autoregressive normalizing flows, 
- we introduce a continuous search algorithm to find causal structures. Our experiments demonstrate state-of-the-art performance 
- across the Sachs and SynTReN benchmarks in Structural Hamming Distance (SHD) and Structural Intervention Distance (SID). 
- Furthermore, we validate our identifiability theory across various parametric and nonparametric synthetic datasets and 
- showcase superior performance compared to existing baselines.
+ We introduce a method for determining causal graphs from observational data, leveraging the similarities between multivariate heteroscedastic noise models and affine autoregressive flows. 
+ Our approach achieves top results in predicting the true causal structure on genomics benchmarks such as Sachs and SynTReN. 
   </p>
 
   <li>
@@ -92,21 +86,9 @@ Linear Algebra, (CE181) Fundamentals of Probability and Statistics, (CE354) Algo
   </li>
   <br>
   <p>
-  Combination therapies have emerged as a powerful treatment modality to overcome drug resistance and improve treatment efficacy. 
-  However, the rapid increase of drug combinations with the number of individual drugs in consideration has led to <em>in Silico</em>
-   simulations becoming widespread. While many studies are only able to find synergistic pairs of drugs, our method which is named 
-   DeepDDR obtains the full dose-response matrices of different drug tuples which enables finding the optimal dose required for many applications.
-    Additionally, this approach offers a more in-depth view of the drugs' complex response landscape and allows us to calculate different synergy 
-    metrics as a follow-up step. From a technical perspective, DeepDDR facilitates Graph Neural Networks and multi-head attention with the goal 
-    of identifying the most effective drug combinations for further pre-clinical and clinical validation. In this work, we propose a general
-     recipe for devising Deep Neural Network architectures that can predict dose responses for multiple drugs on a specific cell line. 
-     In our opinion, this framework can inspire future work to create new models and further address the drug-dose response problem. 
-     Graph Neural Networks and Attention-based models have emerged as powerful machine learning tools in many applications; therefore, we
-      incorporate popular architectures in the domain to obtain latent embeddings of drug compounds and combine cell-line features with these 
-      embeddings. By analogy, while previous work on drug-dose response considers MACCS fingerprints to represent drug compounds, we follow the 
-      trend of using Graph Neural Networks on SMILES notations of compounds to produce more accurate embeddings of drugs. These embeddings 
-      can take into account the structure of the compound as a whole. Finally, our findings indicate that using DeepDDR yields state-of-the-art 
-      results on the comprehensive drug-dose-response NCI-ALMANAC dataset which contains drug pair dose responses on popular human cancer cell lines.
+  Combination therapies are essential for overcoming drug resistance, but the surge in drug combinations has made <em>in Silico</em> simulations crucial. 
+  Our method not only identifies synergistic drug pairs but also produces full dose-response matrices, enabling optimal dosage determinations and a deeper understanding of drug interactions. 
+  Using attention mechanisms, we predict drug responses on specific cell lines, with state-of-the-art results on the NCI-ALMANAC cancer dataset, outpacing traditional drug fingerprints by leveraging graph neural network embeddings.
   </p>
    
   
@@ -123,19 +105,10 @@ Linear Algebra, (CE181) Fundamentals of Probability and Statistics, (CE354) Algo
   </li>
   <br>
   <p>
-  Physarum Polycephalum is a slime mold that can solve shortest path problems.
-  A mathematical model based on Physarum's behavior, known as the Physarum Directed Dynamics, 
-  can solve positive linear programs. In this paper, we present a family of Physarum-based dynamics extending 
-  the previous work and introduce a new algorithm to solve positive Semi-Definite Programs (SDP). 
-  The Physarum dynamics are governed by orthogonal projections (w.r.t. time-dependent scalar products) on the 
-  affine subspace defined by the linear constraints. We present a natural generalization of the scalar products used in the 
-  LP case to the matrix space for SDPs, which boils down to the linear case when all matrices in the SDP are diagonal, thus, 
-  representing an LP. We investigate the behavior of the induced dynamics theoretically and experimentally, 
-  highlight challenges arising from the non-commutative nature of matrix products, and prove soundness and convergence under mild conditions. 
-  Moreover, we consider a more abstract view on the dynamics that suggests a slight variation to guarantee unconditional soundness and
-   convergence-to-optimality. By simulating these dynamics using suitable discretizations, one obtains numerical algorithms for solving positive SDPs,
-    which have applications in discrete optimization, e.g., for computing the Goemans-Williamson approximation for MaxCut or the Lovasz theta 
-    number for determining the clique/chromatic number in perfect graphs.
+  Physarum Polycephalum, a slime mold, exhibits behavior capable of solving shortest path problems, which has inspired a mathematical model for positive linear programs. 
+  This paper introduces an extended family of these dynamics and a new algorithm for positive Semi-Definite Programs (SDP), detailing their foundational principles and their application in discrete optimization, 
+  including solutions for MaxCut approximations and clique/chromatic number determinations in perfect graphs. 
+  Our studies both theoretically and experimentally highlight the challenges, ensure soundness, and confirm convergence.
   </p>
 </ul>
 ~~~
