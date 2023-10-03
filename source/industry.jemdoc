@@ -8,7 +8,7 @@
 <ul>
   <li>
   <p style="text-align:left;">
-	Machine Learning Scientist at <a href="https://layer6.ai/"> Layer6 AI</a>
+	Machine Learning Scientist at <a href="https://layer6.ai/"> Toronto Dominion (TD) bank</a>
   <span style="float:right;"> 
         <em> May 2023 - Ongoing </em>
     </span>
@@ -16,6 +16,17 @@
   </li>
   <ul>
     <li>Research and development of machine learning methods to detect outliers in datasets for fraud detection.</li>
+  </ul>
+
+  <li>
+  <p style="text-align:left;">
+	Machine Learning Research Intern at <a href="https://layer6.ai/"> Layer6 AI</a>
+  <span style="float:right;"> 
+        <em> May 2023 - Ongoing </em>
+    </span>
+	</p>
+  </li>
+  <ul>
     <li>Researched a popular paradox in outlier detection for generative models and developed an ICLR submission in little under 4 months.</li>
   </ul>
 
