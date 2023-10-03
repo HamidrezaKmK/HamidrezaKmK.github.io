@@ -32,69 +32,87 @@ in computer vision, healthcare, and computational biology.
 {}{raw}
 <ul>
   <li>
-  <p style="text-align:left;">
-  <strong> Explaining a Popular Paradox in Deep Generative Models </strong> - <em> <a href="https://layer6.ai/">Layer6 AI</a> - Toronto, Canada </em>
+  <div style="text-align:left;">
+  <strong> Explaining a Popular Paradox in Deep Generative Models </strong>
     <span style="float:right;"> 
         <em> September 2023 </em>
     </span>
-  </p>
+  </div>
+  <div style="text-align:left; padding-top: 5px;"> 
+    <em> <a href="https://layer6.ai/"> Layer6 AI </a>, <a href="https://web.cs.toronto.edu/"> University of Toronto </a> - Toronto, Canada </em>
+  </div>
   </li>
   <p>
   We examine the paradox of deep generative models assigning high likelihoods to unseen data and propose a method to improve their reliability and theoretical understanding in out-of-distribution detection.
   
   <li>
-  <p style="text-align:left;">
-  <strong> Causal Discovery and Inference using Normalizing Flows</strong> - <em> <a href="https://vectorinstitute.ai/">Vector Institute</a> - Toronto, Canada </em>
+  <div style="text-align:left;">
+  <strong> Causal Discovery and Inference using Normalizing Flows</strong>
     <span style="float:right;"> 
         <em> May 2023 </em>
     </span>
-  </p>
+  </div>
+  <div style="text-align:left; padding-top: 5px;"> 
+    <em> <a href="https://vectorinstitute.ai/">Vector Institute</a>, <a href="https://web.cs.toronto.edu/"> University of Toronto </a> - Toronto, Canada </em>
+  </div>
   </li>
   <p>
   Introduced a novel neural network architecture that can learn to understand the underlying structure of the data-generating process. This ultimately
   helps us produce reliable and explainable models that can account for interventional distributions unseen in the training data. [<a href="https://github.com/vahidzee/ocdaf">Code</a>] [<a href="https://arxiv.org/abs/2308.07480">Paper</a>] 
 
 <li>
-  <p style="text-align:left;">
-  <strong> Dysweep </strong> - <em> <a href="https://vectorinstitute.ai/">Vector Institute</a> - Toronto, Canada </em>
+  <div style="text-align:left;">
+  <strong> Dysweep: Enhanced Sweeps for Systematic Experimentation </strong>
     <span style="float:right;"> 
         <em> January 2023 </em>
     </span>
-  </p>
+  </div>
+  <div style="text-align:left; padding-top: 5px;"> 
+    <em> <a href="https://vectorinstitute.ai/">Vector Institute</a> - Toronto, Canada </em>
+  </div>
   </li>
   <p>
   An integration with <a href="https://wandb.ai/">Weights & Biases</a> that provides a pipeline to aid reproducibility, continuous development, and large-scale benchmarking. [<a href="https://github.com/HamidrezaKmK/dysweep">Code</a>]
 
  <li> 
-  <p style="text-align:left;">
-  <strong> Attention-based Drug Discovery </strong> - <em> <a href="https://ce.sharif.edu/">Sharif University</a> - Tehran, Iran </em>
+  <div style="text-align:left;">
+  <strong> Attention-based Drug Discovery </strong>
     <span style="float:right;"> 
         <em> June 2022 </em>
     </span>
-  </p>
+  </div>
+  <div style="text-align:left; padding-top: 5px;"> 
+    <em> <a href="https://ce.sharif.edu/">Sharif University</a> - Tehran, Iran </em>
+  </div>
   </li>
   <p>
   Thesis leveraged attention mechanisms in deep learning to identify synergistic drug combinations for cancer research. 
-  Achieved a 1.5x accuracy boost in dose response prediction for the NCI-ALMANAC cancer drug database.
+  Achieved a significant accuracy boost of 10% in dose response prediction for the NCI-ALMANAC cancer drug database.
 <li>
-  <p style="text-align:left;">
-  <strong> RNA Sequence design using Graph Neural Networks </strong> - <em> <a href="https://www.aalto.fi/en">Aalto University</a> - Espoo, Finland </em>
+  <div style="text-align:left;">
+  <strong> RNA Sequence design using Graph Neural Networks </strong> 
     <span style="float:right;"> 
         <em> September 2021 </em>
     </span>
-  </p>
+  </div>
+  <div style="text-align:left; padding-top: 5px;"> 
+    <em> <a href="https://www.aalto.fi/en">Aalto University</a> - Espoo, Finland </em>
+  </div>
   </li>
   <p>
   Designing beneficial RNA structures is challenging in biotechnology. 
   We use reinforcement learning algorithms combined with graph neural networks to model and design RNA sequences, 
   obtaining previously underexplored structures like RNA pseudo-knots.
   <li>
-  <p style="text-align:left;">
-  <strong> Semi-definite Programming using Slime Molds </strong> - <em> <a href="https://www.mpi-inf.mpg.de/home">Max-Planck for Informatics</a> - Saarbrücken, Germany </em>
+  <div style="text-align:left;">
+  <strong> Semi-definite Programming using Slime Molds </strong>
     <span style="float:right;"> 
         <em> June 2021 </em>
     </span>
-  </p>
+  </div>
+  <div style="text-align:left; padding-top: 5px;"> 
+    <em> <a href="https://www.mpi-inf.mpg.de/home">Max-Planck for Informatics</a> - Saarbrücken, Germany </em>
+  </div>
   </li>
   <p>
   Inspired by the optimization dynamics of slime molds in nature, 
