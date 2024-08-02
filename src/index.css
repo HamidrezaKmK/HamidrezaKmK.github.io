@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('/background1.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  body{
+    background-size: auto;
+  }
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+
+a{
+  color: #4154FF; 
+  font-weight: 400; 
+  font-family: 'Neufile Grotesk', sans-serif;
+  font-style: italic;
+}
+
+p{
+  color: #464646; 
+  font-weight: 400; 
+  font-family: 'Neufile Grotesk', sans-serif;
+}

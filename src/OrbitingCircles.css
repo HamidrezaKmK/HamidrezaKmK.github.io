@@ -1,0 +1,382 @@
+:root {
+  --animation-play-state: running;
+}
+
+.orbit-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease, top 1s ease;
+}
+
+.orbit-container.orbit-top {
+  top: 10%;
+  transform: translateY(-40%);
+  transition: transform 1s ease-in-out;
+}
+
+.orbit-container.selected-child {
+  transform: translateY(-70%) !important;
+  transition: transform 1s ease-in-out;
+}
+
+.orbit-container.center-bottom {
+  top: auto;
+  transform: translateY(-40%) translateX(0%);
+}
+
+.center-card {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.orbit-inner,
+.orbit-outer {
+  position: absolute;
+  border: 1px dashed #858585;
+  border-spacing: 5px;
+  border-radius: 50%;
+  opacity: 70;
+}
+
+.orbit-outer {
+  width: 30rem;
+  height: 30rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit-image {
+  position: absolute;
+  cursor: pointer;
+}
+
+.orbit-inner {
+  width: 20rem;
+  height: 20rem;
+  z-index:1300;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.orbit-inner-1 {
+  transform: rotate(0deg) translateX(-160px) rotate(0deg);
+  animation: rotateImage1 40s linear infinite;
+}
+
+.orbit-inner-2 {
+  transform: rotate(-120deg) translateX(-165px) rotate(120deg);
+  animation: rotateImage2 40s linear infinite;
+}
+
+.orbit-inner-4 {
+  transform: rotate(-240deg) translateX(-165px) rotate(240deg);
+  animation: rotateImage4 40s linear infinite;
+}
+.orbit-outer-1 {
+  transform: rotate(0deg) translate(15rem) rotate(0deg);
+  animation: rotateImage5 40s linear infinite;
+}
+
+.orbit-outer-2 {
+  transform: rotate(120deg) translate(15rem) rotate(-118deg);
+  animation: rotateImage6 40s linear infinite;
+}
+
+.orbit-outer-3 {
+  transform: rotate(54deg) translate(-15rem) rotate(-53deg);
+  animation: rotateImage7 40s linear infinite;
+}
+
+@keyframes rotateImage1 {
+  0% {
+    transform: rotate(0deg) translateX(-160px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-160px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateImage2 {
+  0% {
+    transform: rotate(-120deg) translateX(-165px) rotate(120deg);
+  }
+  100% {
+    transform: rotate(240deg) translateX(-165px) rotate(-240deg);
+  }
+}
+
+@keyframes rotateImage4 {
+  0% {
+    transform: rotate(-240deg) translateX(-165px) rotate(240deg);
+  }
+  100% {
+    transform: rotate(120deg) translateX(-165px) rotate(-120deg);
+  }
+}
+
+@keyframes rotateImage5 {
+  0% {
+    transform: rotate(0deg) translate(15rem) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(15rem) rotate(-360deg);
+  }
+}
+
+@keyframes rotateImage6 {
+  0% {
+    transform: rotate(120deg) translate(15rem) rotate(-118deg);
+  }
+  100% {
+    transform: rotate(480deg) translate(15rem) rotate(-478deg);
+  }
+}
+
+@keyframes rotateImage7 {
+  0% {
+    transform: rotate(54deg) translate(-15rem) rotate(-53deg);
+  }
+  100% {
+    transform: rotate(414deg) translate(-15rem) rotate(-413deg);
+  }
+}
+
+.orbit-image.selected{
+  animation: none;
+
+}
+
+.orbit-container.orbit-reset .orbit-image {
+  animation-play-state: paused;
+  transform: rotate(0deg);
+}
+
+
+.orbit-image.orbit-inner-1.selected,
+.orbit-image.orbit-inner-2.selected,
+.orbit-image.orbit-inner-4.selected {
+  transition: transform 0.5s ease;
+  transform: rotate(-92deg) translate(-21rem) rotate(93deg)  scale(1.5);
+}
+
+.orbit-image.orbit-outer-1.selected,
+.orbit-image.orbit-outer-2.selected,
+.orbit-image.orbit-outer-3.selected {
+  transition: transform 0.5s ease;
+  transform: rotate(-92deg) translate(-21rem) rotate(93deg) scale(1.5);
+}
+
+.child-node.selectedchild {
+  width:66px;
+  height: 66px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.6);
+  color: #7851A9;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 1200;
+  white-space: nowrap;
+}
+
+.orbit-reset .orbit-inner,
+.orbit-reset .orbit-outer {
+  animation-play-state: paused;
+}
+
+.children-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-node {
+  position: absolute;
+  transition: transform 0.5s ease;
+  z-index: 100;
+}
+
+.selected-child-content {
+  position: absolute;
+  top: 110%;
+  width: 80%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+@media (max-width: 768px) {
+  .orbit-inner {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .orbit-outer {
+    width: 26rem;
+    height: 26rem;
+  }
+
+  .orbit-inner-1 {
+    transform: rotate(59deg) translate(19rem) rotate(0deg);
+    z-index: 1;
+  }
+
+  .orbit-inner-2 {
+    transform: rotate(90deg) translate(3rem) rotate(-90deg);
+    z-index: 1;
+  }
+
+  .orbit-inner-4 {
+    transform: rotate(6deg) translate(14rem) rotate(0deg);
+    z-index: 1;
+  }
+
+  .orbit-outer-1 {
+    transform: rotate(0deg) translate(6rem) rotate(0deg);
+  }
+
+  .orbit-outer-2 {
+    transform: rotate(80deg) translate(22rem) rotate(-120deg);
+  }
+
+  .orbit-outer-3 {
+    transform: rotate(28deg) translate(27rem) rotate(-231deg);
+  }
+
+  .orbit-container.center-bottom {
+    top: auto;
+    transform: translateY(-30%) translateX(0%);
+  }
+
+  .orbit-image.orbit-outer-1.selected,
+  .orbit-image.orbit-outer-2.selected,
+  .orbit-image.orbit-outer-3.selected {
+    transition: transform 0.5s ease;
+    transform: translateX(389%) translateY(384px) rotate(0deg) scale(1.5);
+  }
+
+  .orbit-image.orbit-inner-1.selected,
+  .orbit-image.orbit-inner-2.selected,
+  .orbit-image.orbit-inner-4.selected {
+    transition: transform 0.5s ease;
+    transform: translateX(280%) translateY(262px) rotate(0deg) scale(1.5);
+  }
+  .child-node {
+    position: absolute;
+    transition: transform 0.5s ease;
+    z-index: 100;
+    padding-left: 5px;
+    padding-right:5px;
+  }
+}
+
+.line {
+  position: absolute;
+  transform-origin: top left;
+  stroke: #7851A9;
+  stroke-width: 2;
+  stroke-dasharray: 5; /* Adjust based on your line length */
+  stroke-dashoffset: 10; /* Same as stroke-dasharray */
+  animation: drawLine 0.1s forwards, fadeLine 0.1s forwards;
+}
+
+.line-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.unselected-child {
+  transform: translatey(30%);
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeLine {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.line-svg-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.grandchildren-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.child, .grandchild {
+  transition: transform 0.3s;
+}
+.selected-grandchild-content{
+  position: absolute;
+  top: 140%;
+  width: 80%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
