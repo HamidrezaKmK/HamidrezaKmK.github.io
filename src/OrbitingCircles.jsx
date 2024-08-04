@@ -1,6 +1,7 @@
     import React, { useState, useEffect, useRef } from 'react';
     import './OrbitingCircles.css';
-    import parents from './data';
+    import parents, { aboutMe } from './data.js';
+    import ContentDisplay from './ContentDisplay';
 
     const OrbitingCircles = () => {
         const [rotating, setRotating] = useState(true);
@@ -74,21 +75,21 @@
         const getChildPosition = (index, total, isMobile) => {
             let left;
             if (isMobile) {
-                const start = -266.667;
-                const end = 166.667;
+                const start = -366.667;
+                const end = 266.667;
                 const gap = (end - start) / (total - 1);
                 left = start + (gap * index);
             } else {
                 const gap = 1800 / (total + 1);
                 left = gap * (index + 1) - 900;
             }
-            const translateY = isMobile ? '350%' : '550%';
-
+            const translateY = isMobile ? '550%' : '460%';
+            const x = isMobile ? '10%' : '50%'
             return {
-                transform: `translate(50%, 150%) translateX(${left}%) translateY(${translateY})`
+                transform: `translate(${x}, 150%) translateY(${translateY})`
             };
         };
-    const getGrandchildPosition = (index, total, isMobile) => {
+        const getGrandchildPosition = (index, total, isMobile) => {
         const radius = isMobile ? 150 : 250;
             const angle = (index / total) * 2 * Math.PI;
         
@@ -100,7 +101,7 @@
             };
         };
         
-    const getCoordinates = (ref) => {
+        const getCoordinates = (ref) => {
             if (ref && ref.getBoundingClientRect) {
                 const rect = ref.getBoundingClientRect();
                 return {
@@ -112,7 +113,7 @@
         };
         
         
-    const parentCoordinates = selectedParent ? getCoordinates(parentRef.current) : null;
+        const parentCoordinates = selectedParent ? getCoordinates(parentRef.current) : null;
         const childrenCoordinates = selectedParent
         ? selectedParent.children.map((_, index) => getCoordinates(childrenRefs.current[index]))
             : [];
@@ -120,7 +121,7 @@
         const outerParentCoordinates = selectedParent
         ? selectedParent.children.map((_, index) => getCoordinates(childrenRefs.current[index]))
             : [];
-        
+        const childContent = selectedChild || aboutMe.children.find(child => child.id === 61);
         return (
             <div className={`orbit-container ${selectedParent ? 'orbit-reset orbit-top' : (rotating ? '' : 'orbit-top')} ${selectedChild ? 'selected-child' : ''}`}>
                 <div className="orbit-inner">
@@ -162,7 +163,7 @@
                             ref={el => outerParentRefs.current[index] = el}
                         >
                             <img src={parent.image} alt={parent.name} className="w-16 rounded-full" />
-                            <div className="tooltip">{parent.name}</div>
+                            <div className="tooltip" dangerouslySetInnerHTML={{ __html: parent.name }}/>
                         </div>
                     ))}
                 </div>
@@ -176,8 +177,8 @@
                                 onClick={() => handleChildClick(child)}
                                 ref={el => childrenRefs.current[index] = el}
                             >
-                                <img src={child.image} alt={child.name} className="w-16 h-16 rounded-full" />
-                                <div className="tooltip">{child.name}</div>
+                                <img src={child.image} alt={child.name} className="md:w-16 md:h-16 w-10 h-10 object-fill rounded-full" />
+                                <div className="tooltip" dangerouslySetInnerHTML={{ __html: child.name }} />
                             </div>
                         ))}
                     </div>
@@ -201,19 +202,17 @@
                     </div>
                 )}
 
-                {selectedChild &&
-                    (!selectedChild.children || selectedChild.children.length === 0 || !selectedGrandchild) &&
-                    selectedChild.content && (
+                {childContent && (
                         <div className="selected-child-content rounded-3xl">
-                            <h2 className='text-[#7851A9] font-semibold font-header my-2 text-2xl px-[20px]'>{selectedChild.name}</h2>
-                            <div dangerouslySetInnerHTML={{ __html: selectedChild.content }} />
+                            <h2 className='text-[#7851A9] font-semibold font-header my-2 text-2xl px-[20px]'>{childContent.name}</h2>
+                            <ContentDisplay contentPath={childContent.content} />
                         </div>
-                    )}
+                )}
 
                 {selectedGrandchild && (
                     <div className="selected-grandchild-content rounded-3xl">
                         <h2 className='text-[#7851A9] font-semibold font-header my-2 text-2xl px-[20px]'>{selectedGrandchild.name}</h2>
-                        <div dangerouslySetInnerHTML={{ __html: selectedGrandchild.content }} />
+                        <ContentDisplay contentPath={selectedGrandchild.content} />
                     </div>
                 )}
 
