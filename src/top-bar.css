@@ -1,0 +1,14 @@
+/* Define a custom class for special hyperlinks */
+.top-bar-link {
+    color: white; /* Set the text color */
+    font-weight: bold; /* Make the link bold */
+    padding: 2px 4px; /* Optional: Add padding around the link */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    text-decoration: none;
+}
+
+.top-bar-link:hover {
+    color: #eee0fb; /* Change color on hover */
+    text-decoration: none;
+}
