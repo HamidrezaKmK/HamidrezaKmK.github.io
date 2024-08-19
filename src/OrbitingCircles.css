@@ -3,13 +3,21 @@
 }
 
 .orbit-container {
+  top: var(--card-x) !important;
+  left: var(--card-y) !important;
   width: 100%;
-  height: 100%;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: transform 1s ease, top 1s ease;
+}
+
+
+/* the following disables the orbiting circles */
+.orbit-container.deactive {
+  display: none;
 }
 
 .orbit-container.orbit-top {
@@ -26,20 +34,6 @@
 .orbit-container.center-bottom {
   top: auto;
   transform: translateY(-40%) translateX(0%);
-}
-
-.center-card {
-  position: absolute;
-  width: 12rem;
-  height: 12rem;
-  background-color: #fff;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  z-index: 1000;
 }
 
 .orbit-inner,
@@ -164,17 +158,18 @@
   }
 }
 
-.orbit-image.selected{
+/* .orbit-image.selected{
   animation: none;
 
-}
+} */
 
-.orbit-container.orbit-reset .orbit-image {
+/* .orbit-container.orbit-reset .orbit-image {
   animation-play-state: paused;
   transform: rotate(0deg);
-}
+} */
 
 
+/* What happens when an item in the inner orbit is selected */
 .orbit-image.orbit-inner-1.selected,
 .orbit-image.orbit-inner-2.selected,
 .orbit-image.orbit-inner-4.selected {
@@ -182,6 +177,7 @@
   transform: rotate(-92deg) translate(-24rem) rotate(93deg)  scale(1.5);
 }
 
+/* What happens when an item in the outer orbit is selected */
 .orbit-image.orbit-outer-1.selected,
 .orbit-image.orbit-outer-2.selected,
 .orbit-image.orbit-outer-3.selected {

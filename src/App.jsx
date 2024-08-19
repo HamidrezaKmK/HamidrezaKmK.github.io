@@ -1,29 +1,53 @@
-import { useState } from 'react'
+import { useState, useRef} from 'react'
 import './App.css'
-import './top-bar.css'
 import './globals.css'
 import OrbitingCircles from './OrbitingCircles';
+import CenterCard from './CenterCard';
+import NavBar from './NavBar';
+import BottomBar from './BottomBar';
+import Links from './Links';
+import FirstPageContent from './FirstPageContent';
 
 function App() {
-  const navbar = (
-    <>
-      <div className="logo"><a href='index.html' className="top-bar-link"> My Logo </a></div>
-          <nav className="nav-links">
-              <a href="#home" className="top-bar-link">Home</a>
-              <a href="#about" className="top-bar-link">About</a>
-              <a href="#contact" className="top-bar-link">Contact</a>
-          </nav>
-    </>
-  );
+  const [logoSelected, setLogoSelected] = useState(false)
+  const orbitingCirclesRef = useRef(null)
+  
+  const handleLogoClick = () => {
+    setLogoSelected(true)
+  }
+
+  /* upper part of the website */
+  const navbar = <NavBar/>
+
+  /* left part of the website */
+  const sidebar = (
+    <div className='sidebar'>
+      <div className="center-card-content">
+        <CenterCard onClick={handleLogoClick} isTreeNode={logoSelected} mainPageRef={orbitingCirclesRef}/>
+      </div>
+      <div className="links-content">
+        <Links/>
+      </div>
+    </div>
+  )
+
+
+  const bottomBar = <BottomBar/>
+
   return (
-    <>
-      <div className="top-bar">
-        {navbar}
+      <div className="app-container">
+      <div className="top-bar"> {navbar} </div>
+      <div className="content-container" id="content">
+          <div className="orbit-and-sidebar">
+            <OrbitingCircles ref={orbitingCirclesRef} active={logoSelected} />
+            {!logoSelected && sidebar}
+          </div>
+          {!logoSelected && <FirstPageContent />}
+        </div>
+      <div className="bottom-bar-container">
+        {bottomBar}
       </div>
-      <div className="h-full w-full">
-        <OrbitingCircles />
       </div>
-    </>
   )
 }
 

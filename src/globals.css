@@ -13,3 +13,25 @@
     background-color: #7d57ac; /* Invert background color on hover */
     text-decoration: none;
 }
+
+
+a{
+    color: #7d57ac; 
+    font-weight: 400; 
+    font-family: 'Neufile Grotesk', sans-serif;
+    /* underline the link */
+    text-decoration: underline;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+p{
+    color: #464646; 
+    font-weight: 400; 
+    font-family: 'Neufile Grotesk', sans-serif;
+    font-size: 0.85rem;
+}
+
+  

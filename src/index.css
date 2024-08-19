@@ -10,11 +10,12 @@ html, body {
 }
 
 body {
-  background-image: url('/background1.png');
+  background-image: url('/background4.png');
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  background-attachment: fixed; /* Fix the background so it doesn't scroll */
 }
 @media (max-width: 768px) {
   body{
@@ -27,45 +28,3 @@ body {
 }
 
 
-a{
-  color: #4154FF; 
-  font-weight: 400; 
-  font-family: 'Neufile Grotesk', sans-serif;
-  font-style: italic;
-}
-
-p{
-  color: #464646; 
-  font-weight: 400; 
-  font-family: 'Neufile Grotesk', sans-serif;
-}
-
-/* top bar elements */
-
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: rgb(61, 60, 60); /* Or any color you prefer */
-  color: #eee0fb;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10000;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-links a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-}
