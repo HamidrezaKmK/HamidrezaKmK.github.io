@@ -23,3 +23,19 @@
     font-weight: bold;
 }
 
+.main-content h1 {
+    /* add underline to the text */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main-content h2 {
+    cursor: pointer;
+}
+
+.main-content h1:hover {
+    /* change style to italic */
+    font-style: italic;
+}
+
+
