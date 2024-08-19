@@ -34,7 +34,7 @@ const Links = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" target="_blank" className="my-side-item">
+                        <a href="https://scholar.google.com/citations?user=lWBWz48AAAAJ&hl=en" target="_blank" className="my-side-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#7851A9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                             Google Scholar
                         </a>

@@ -35,8 +35,19 @@
     margin-right: 10px; /* Adds space between the icon and the text */
 }
 
+
+.bottom-bar .powered-by-mark p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 8px; /* Adjusted for better visibility */
+    margin-left: 20px;
+    color: #ffffff89 !important;
+}
+
 .footer-content {
     display: flex;
     align-items: center; /* Centers the icon and text vertically */
     justify-content: center; /* Centers the icon and text horizontally */
+    position: relative;
 }
