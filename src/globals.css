@@ -40,6 +40,15 @@ p{
     margin: 20px 0; /* Optional: Add some margin around the container */
 }
 
+.video-wrapper {
+    display: flex;
+    justify-content: center; /* Center the iframe inside the wrapper */
+}
+
+.video-container iframe {
+    max-width: 100%; /* Ensure the iframe is responsive */
+}
+
 .video-caption {
     margin-top: 10px; /* Space between the video and caption */
     font-size: 0.9em; /* Adjust the caption font size */
@@ -86,3 +95,63 @@ p{
     padding-left: 20px; /* Indent for bullet point */
     justify-content: space-between;
 }
+
+
+.dated-item.publication p {
+    margin: 0 !important; /* Remove default margin */
+    justify-content: space-between !important; /* Space between date and text */
+    width: 100% !important; /* Ensure paragraphs take full width of the parent */
+}
+
+.dated-item.publication {
+    list-style-type: disc !important; /* Adds a bullet point */
+    display: flex !important;
+    flex-direction: column !important; /* Stack items vertically */
+    margin-bottom: 5px !important; /* Space between news items */
+    position: relative !important; /* Allows positioning of date */
+    padding-left: 20px !important; /* Indent for bullet point */
+    justify-content: flex-start !important; /* Align items to the top */
+}
+
+.dated-item.publication a.publication-venue {
+    /* make italics */
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+
+.dated-item.publication a.publication-venue.main-conference {
+    /* make bold */
+    font-weight: bold;
+}
+/* if not main conference then remove the bold */
+.dated-item.publication a.publication-venue:not(.main-conference) {
+    font-weight: normal;
+    /* remove underline */
+    text-decoration: none;
+}
+
+/* when hovering over not a main conference set color to some other color */
+.dated-item.publication a.publication-venue:not(.main-conference):hover {
+    background-color: #7d57ac72;
+}
+
+.dated-item.publication p.TLDR {
+    /* make font style normal */
+    font-style: normal;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.dated-item.publication p.publication-title {
+    /* make font style normal */
+    font-weight: bold;
+    font-size: 1.05m;
+}
+
+.dated-item.publication p.publication-authors {
+    /* make font style normal */
+    font-size: 0.8em;
+}
+
+

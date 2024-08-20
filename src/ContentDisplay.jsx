@@ -16,7 +16,6 @@ const ContentDisplay = ({ contentPaths }) => {
                             return response.text();
                         })
                     );
-                    console.log('allContent:', allContent.join('\n'));
                     setContent(allContent.join('\n')); // Concatenate all the content
                 } catch (error) {
                     console.error('Error fetching content:', error);

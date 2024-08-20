@@ -11,7 +11,6 @@ const CenterCard = ({ onClick , isTreeNode, mainPageRef}) => {
     // An extention of the handleLogoClick function where it transitions the page to the clicked page
     // the function will also call the onClick function that is passed as a prop
     const handleLogoClick = () => {
-        console.log('mainPageRef', mainPageRef.current);
         if (!isTreeNode && cardRef.current) {
             setIsTransitioning(false); // TODO: set to True once done!
             const cardElement = cardRef.current;

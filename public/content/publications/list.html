@@ -1,9 +1,105 @@
 <ul style='padding: 10px 20px; list-style-type: disc;'>
     <li class="dated-item publication">
-        <p>
-            howdy!
-
+        <p class="publication-title">
+            A Geometric Explanation of the Likelihood OOD Detection Paradox
         </p>
-        <span class="dated-item-date"><em>August 2024</em></span>
+        <p class="publication-authors">
+            <em><u><strong>Hamidreza Kamkari</strong></u></em>, Brendan Leigh Ross, Jesse C. Cresswell, Anthony L. Caterini, Rahul Krishnan, Gabriel Loaiza-Ganem
+        </p>
+        <a href="https://proceedings.mlr.press/v235/kamkari24a.html" class="publication-venue main-conference special-hyperref">
+            Proceedings of the 41st International Conference on Machine Learning, PMLR 235:22908-22935, 2024.
+        </a>
+        <a href="https://sites.google.com/view/genai4dm-iclr2024/home" class="publication-venue special-hyperref">
+            Generative Models for Decision Making @ ICLR 2024
+        </a>
+        <p class="TLDR">
+            Explaining a popular paradox in likelihood-based deep generative models, where they assign higher 
+            likelihoods to unseen out-of-distribution (OOD) data. Using the manifold hypothesis, we show that this occurs when the 
+            OOD data lies on a lower-dimensional manifold than the training data. 
+            Despite the high likelihoods, these OOD regions have low volume, and thus the model 
+            rarely generates these OOD samples due to their small probability mass as a result of that
+            small volume.
+        </p>
     </li>
+
+    <li class="dated-item publication">
+        <p class="publication-title">
+            A Geometric View of Data Complexity: Efficient Local Intrinsic Dimension Estimation with Diffusion Models
+        </p>
+        <p class="publication-authors">
+            <em><u><strong>Hamidreza Kamkari</strong></u></em>, Brendan Leigh Ross, Rasa Hosseinzadeh, Jesse C. Cresswell, Gabriel Loaiza-Ganem
+        </p>
+        <a href="https://arxiv.org/abs/2406.03537" class="publication-venue main-conference special-hyperref">
+            Preprint under review at Neural Information Processing Systems (NeurIPS) 2024.
+        </a>
+        <a  class="publication-venue special-hyperref">
+            Structured Probabilistic Inference and Generative Modelling @ ICML 2024 <strong> (Oral) </strong>
+        </a>
+        <a class="publication-venue special-hyperref">
+            Differentiable Almost Everything @ ICML 2024 <strong> (Oral) </strong>
+        </a>
+        <a class="publication-venue special-hyperref">
+            Geometry-grounded Representation Learning and Generative Modeling @ ICML 2024
+        </a>
+        <p class="TLDR">
+            We introduce a novel estimator using diffusion models to measure the local intrinsic dimension (LID) of the data manifold. Our method is efficient, scalable, and closely aligns with data complexity, showing a strong correlation with PNG compression size. For the first time, we can estimate LID for high-resolution images with approximately 1 million dimensions.
+        </p>
+    </li>
+
+    <li class="dated-item publication">
+        <p class="publication-title">
+            Order-based Structure Learning with Normalizing Flows
+        </p>
+        <p class="publication-authors">
+            <em><u><strong>Hamidreza Kamkari*</strong></u></em>, Vahid Balazadeh*, Vahid Zehtab, Aidan Li, Rahul G. Krishnan
+        </p>
+        <a href="https://arxiv.org/abs/2308.07480" class="publication-venue special-hyperref">
+            Preprint under review at the 39th Annual AAAI Conference on Artificial Intelligence 
+        </a>
+        <p class="TLDR">
+            We employ masked autoregressive normalizing flows to encode the assumptions of the data-generating process. 
+            By learning the optimal masking strategy that maximizes the data's likelihood, we can uncover the underlying
+             causal structure of the observational data and use that to make predictions.
+        </p>
+    </li>
+
+    <li class="dated-item publication">
+        <p class="publication-title">
+            A Geometric Framework for Understanding Memorization in Generative Models
+        </p>
+        <p class="publication-authors">
+            Brendan Leigh Ross, <em><u><strong>Hamidreza Kamkari</strong></u></em>, Zhaoyan Liu, Tongzi Wu, George Stein, Gabriel Loaiza-Ganem, Jesse C. Cresswell
+        </p>
+        <a href="https://openreview.net/pdf?id=aq6btjS3ZG" class="publication-venue special-hyperref">
+            Next Generation AI Safety @ ICML 2024
+        </a>
+        <a class="publication-venue special-hyperref">
+            Geometry-grounded Representation Learning and Generative Modeling @ ICML 2024
+        </a>
+        <p class="TLDR">
+            We identify the local intrinsic dimension (LID) of the data manifold as a key factor in understanding 
+            memorization in deep generative models. LID represents the number of factors of variation inherent in 
+            a data point and our findings indicate that when a generative model memorizes, it captures fewer factors 
+            of variation for a data point than the true number present in the data manifold.
+        </p>
+    </li>
+
+    <li class="dated-item publication">
+        <p class="publication-title">
+            Physarum Inspired Dynamics to Solve Semi-Definite Programs
+        </p>
+        <p class="publication-authors">
+            Yuan Gao, <em><u><strong>Hamidreza Kamkari</strong></u></em>, Andreas Karrenbauer, Kurt Mehlhorn, Mohammadamin Sharifi
+        </p>
+        <a href="https://arxiv.org/abs/2111.02291" class="publication-venue special-hyperref">
+            ArXiv preprint arXiv:2111.02291 (2021).
+        </a>
+        <p class="TLDR">
+            Inspired by the slime mold (Physarum polycephalum), we propose a novel algorithm to solve semi-definite 
+            programs. This algorithm extends the Physarum-inspired dynamics that have been previously used to solve
+            linear programs, and we demonstrate it can be used to approximate discrete aptimization problems such as 
+            MaxCut or determining Lovasz theta number for determining the clique/chromatic number in perfect graphs.
+        </p>
+    </li>
+
 </ul>
