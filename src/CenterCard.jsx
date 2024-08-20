@@ -13,7 +13,7 @@ const CenterCard = ({ onClick , isTreeNode, mainPageRef}) => {
     const handleLogoClick = () => {
         console.log('mainPageRef', mainPageRef.current);
         if (!isTreeNode && cardRef.current) {
-            setIsTransitioning(true);
+            setIsTransitioning(false); // TODO: set to True once done!
             const cardElement = cardRef.current;
             const { top, left, width, height } = cardElement.getBoundingClientRect();
             

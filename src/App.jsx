@@ -10,14 +10,21 @@ import FirstPageContent from './FirstPageContent';
 
 function App() {
   const [logoSelected, setLogoSelected] = useState(false)
+  const [selectedPage, setSelectedPage] = useState('home')
   const orbitingCirclesRef = useRef(null)
   
+  const onNavClick = (page) => {
+    // when a page is selected, it is set here and it is passed to the FirstPageContent component
+    const pageName = page.target.innerText.toLowerCase()
+    setSelectedPage(pageName)
+  }
+
   const handleLogoClick = () => {
-    setLogoSelected(true)
+    setLogoSelected(false) // TODO: change to true once done!
   }
 
   /* upper part of the website */
-  const navbar = <NavBar/>
+  const navbar = <NavBar onNavClick={onNavClick}/>
 
   /* left part of the website */
   const sidebar = (
@@ -42,7 +49,7 @@ function App() {
             <OrbitingCircles ref={orbitingCirclesRef} active={logoSelected} />
             {!logoSelected && sidebar}
           </div>
-          {!logoSelected && <FirstPageContent />}
+          {!logoSelected && <FirstPageContent selectedPage={selectedPage}/>}
         </div>
       <div className="bottom-bar-container">
         {bottomBar}

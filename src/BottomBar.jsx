@@ -14,7 +14,7 @@ const BottomBar = () => {
             </div>
             <div className="powered-by-mark">
                 <p>&copy; 2024 Hamidreza Kamkari.<br />
-                Powered by <strong>Myself</strong> & Ajay M. V.</p>
+                Written by <strong>Myself</strong> & Ajay M. V. using React.JS</p>
             </div>
         </footer>
     );

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './FirstPageContent.css'; // Create a separate CSS file for the CenterCard component if needed
 import ContentDisplay from './ContentDisplay';
 
-const FirstPageContent = () => {
+const AboutTalksNews = () => {
     const [aboutText, setAboutText] = useState('About Me');
     const [clickedAbout, setClickedAbout] = useState(false);
 
@@ -43,6 +43,24 @@ const FirstPageContent = () => {
             </>
         </main>
     );
+}
+
+const Publications = () => {
+    return (
+        <main className="main-content">
+            <h2 className="text-xl font-normal text-[#7851A9] font-header">Publications</h2>
+            <ContentDisplay contentPaths={['./content/publications/list.html']}/>
+        </main>
+    );
+}
+
+const FirstPageContent = ({ selectedPage }) => {
+    return (
+        <>
+            {selectedPage === 'home' && <AboutTalksNews />}
+            {selectedPage === 'publications' && <Publications />}
+        </>
+    )
 }
 
 export default FirstPageContent;
