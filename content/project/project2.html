@@ -1,0 +1,23 @@
+<div style='padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px;'>
+    <p>Physarum Polycephalum is a slime mold that can solve shortest path problems. A mathematical model based on
+        Physarum's behavior, known as the Physarum Directed Dynamics, can solve positive linear programs. In this paper,
+        we present a family of Physarum-based dynamics extending the previous work and introduce a new algorithm to
+        solve positive Semi-Definite Programs (SDP). The Physarum dynamics are governed by orthogonal projections
+        (w.r.t. time-dependent scalar products) on the affine subspace defined by the linear constraints. We present a
+        natural generalization of the scalar products used in the LP case to the matrix space for SDPs, which boils down
+        to the linear case when all matrices in the SDP are diagonal, thus, representing an LP.</p><br /><img
+        src="/project2.png" alt="Semidefinite Programming using a Physarum Based Dynamic"><br />
+    <p>We investigate the behavior of the induced dynamics theoretically and experimentally, highlight challenges
+        arising from the non-commutative nature of matrix products, and prove soundness and convergence under mild
+        conditions. Moreover, we consider a more abstract view of the dynamics that suggests a slight variation to
+        guarantee unconditional soundness and convergence-to-optimality. By simulating these dynamics using suitable
+        discretizations, one obtains numerical algorithms for solving positive SDPs, which have applications in discrete
+        optimization, e.g., for computing the Goemans-Williamson approximation for MaxCut or the Lovasz theta number for
+        determining the clique/chromatic number in perfect graphs.</p>
+    <p style='color: #ff0000;'>Yuan Gao, Hamidreza Kamkari, Andreas Karrenbauer, Kurt Mehlhorn, Mohammadamin Sharifi
+        <span style='color: #000;'>(<a href="https://arxiv.org/abs/2111.02291"
+                style="color: #4154FF; font-weight: 400; font-family: ' Neufile Grotesk', sans-serif;">PDF</a>)(<a
+                href="https://github.com/HamidrezaKmK/PhysarumSDPSolver"
+                style="color: #4154FF; font-weight: 400; font-family: ' Neufile Grotesk', sans-serif;">Code</a>)</span>
+    </p>
+</div>
