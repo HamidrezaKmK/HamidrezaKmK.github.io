@@ -10,5 +10,6 @@ Currently, two official plugins are available:
 ## How to depoy?
 
 ```bash
+npm install gh-pages --save-dev
 npm run deploy
 ```
