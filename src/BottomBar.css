@@ -1,0 +1,53 @@
+/* BottomBar.css */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+}
+
+#content {
+    flex: 1 0 auto; /* Allow content to grow and push the footer down */
+}
+
+.bottom-bar {
+    background-color: #3d3c3c; /* Dark background color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.bottom-bar a {
+    color: #eee0fb; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-style: normal; /* Ensure text is not italic */
+}
+
+.bottom-bar a:hover {
+    text-decoration: underline; /* Underline on hover */
+    font-style: italic; /* Ensure text is not italic */
+}
+
+.bottom-bar svg {
+    margin-right: 10px; /* Adds space between the icon and the text */
+}
+
+
+.bottom-bar .powered-by-mark p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 8px; /* Adjusted for better visibility */
+    margin-left: 20px;
+    color: #ffffff89 !important;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; /* Centers the icon and text vertically */
+    justify-content: center; /* Centers the icon and text horizontally */
+    position: relative;
+}

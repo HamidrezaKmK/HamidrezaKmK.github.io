@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('/background4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed; /* Fix the background so it doesn't scroll */
+}
+@media (max-width: 768px) {
+  body{
+    background-size: auto;
+  }
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+

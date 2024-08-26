@@ -1,0 +1,217 @@
+/* CenterCard.css */
+
+/* Center card itself */
+.center-card {
+    width: 100%; /* Fixed width */
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.all-the-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the header inside the center card */
+.center-card h2 {
+    text-align: left;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.1rem;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* What happens when the center card is a tree node */
+.center-card.is-tree-node {
+    width: 12rem; /* New width when tree state is active */
+    height: 12rem; /* New height when tree state is active */
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 0px;
+    box-shadow: none; /* Ensure there's no shadow */
+}
+
+.center-card.transition-to-center {
+    animation: movetocenter 2s forwards;
+    z-index: 2000;
+    pointer-events: none; /* Freeze controls during the transition */
+}
+
+.center-card.transition-to-center .my-logo ~ * {
+    animation: fadeOutElements 2s forwards;
+}
+
+@keyframes fadeOutElements {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes movetocenter {
+    0% {
+        top: var(--initial-top);
+        left: var(--initial-left);
+        transform: translate(0, 0);
+        box-shadow: none; /* Ensure there's no shadow */
+    }
+    100% {
+        top: var(--translate-x);
+        left: var(--translate-y);
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, 0.0);
+        box-shadow: none; /* Ensure there's no shadow */
+    }
+}
+
+/* This ensures other elements don't interfere during the transition */
+.transition-to-center * {
+    pointer-events: none;
+}
+
+/* The logo position and styling */
+.my-logo {
+    position: relative;
+    z-index: 1001; /* Ensure the logo itself is on top */
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: 50%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.center-card .my-logo img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain; /* Ensure the image scales correctly within the container */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the circle area without distortion */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+    position: relative;
+    z-index: 1002; /* Ensure the image is above the pulse effect */
+}
+
+.center-card.is-tree-node .my-logo {
+    position: absolute; /* Ensure it's positioned relative to its closest positioned ancestor */
+    top: var(--card-y); /* Use --card-y, default to 0 if not set */
+    left: var(--card-x); /* Use --card-x, default to 0 if not set */
+    width: 50%;
+    height: 50%;
+}
+
+.my-logo img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+    transform: scale(1.1); /* Scale the image to 110% of its original size */
+    animation-play-state: paused; /* Pause the pulse animation */
+}
+
+
+.my-logo::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(120, 81, 169, 0.5); /* Purple color with transparency */
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    pointer-events: none; /* Ensures it doesn't interfere with click events */
+    animation: pulse 2s infinite;
+    z-index: 1000; /* Ensure the pulse effect is behind the logo */
+}
+
+/* Change pulse color to black and reset the transform and opacity on hover */
+.my-logo:hover::after {
+    background-color: rgba(0, 0, 0, 0.0); /* Black color with transparency */
+    transform: translate(-50%, -50%) scale(0); /* Reset the pulse to its original scale */
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1.0);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.3);
+        opacity: 0;
+    }
+}
+
+/* bulletpoints under the header */
+
+.center-card .text-center {
+    text-align: left;
+    width: 100%;
+}
+
+
+/* Styling for the bullet list inside the center card */
+.bullet-list {
+    list-style-type: none;
+    padding-left: 0; /* Remove default list padding */
+    margin: 0;
+}
+
+.bullet-list li {
+    display: flex; /* Align items horizontally */
+    align-items: center;
+    margin-bottom: 0rem; /* No space between list items */
+    margin-left: 0.2rem;
+}
+
+.vertical-line {
+    width: 10px;
+    height: 10px;
+    color: black;
+}
+
+.bullet-header {
+    position: relative;
+    display: block;
+    padding-left: 15px; /* Add padding to make space for the line */
+    text-decoration: none;
+    color: #444;
+    font-size: 10px; /* Prevent font size from scaling */
+    transform: scale(1); /* Prevent scaling */
+}
+
+.bullet-header:hover {
+    color: #7851A9; /* Change to purple on hover */
+    /* bold the text on hover */
+    font-weight: bold;
+}
+
+.bullet-header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: gray;
+    transition: background-color 0.3s ease;
+}
+
+.bullet-header:hover::before {
+    background-color: #7851A9; /* Change to purple on hover */
+}
+
+/* Prevent font size and child dimensions from changing with zoom */
+.center-card * {
+    width: auto; /* Ensure children elements don't scale unexpectedly */
+    height: auto; /* Ensure children elements don't scale unexpectedly */
+}

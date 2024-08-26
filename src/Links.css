@@ -1,0 +1,76 @@
+/* side-bar links */
+
+.side-links {
+    
+    left: 1%;
+    right: 2%;
+
+    width: 100%; /* Fixed width */
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 1s ease-in-out;
+}
+
+.list-links h2 {
+    text-align: left;
+    margin-left: 0.1rem;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-links .item-list {
+    width: 100%; /* Ensure the item list takes up the full width */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    list-style-type: none; /* Remove default bullet points */
+}
+
+.side-links .item-list li {
+    display: flex; /* Makes the icon and text appear in a row */
+    align-items: center; /* Vertically centers the icon and text */
+    margin-bottom: 0px; /* Adds some space between the list items */
+    justify-content: flex-start; /* Aligns the content to the left */
+}
+
+.side-links .item-list li .my-side-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes the underline from the links */
+    color: #464646; /* Inherits the color from the parent element */
+    font-style: italic;
+    justify-content: flex-start; /* Aligns the content to the left */
+    font-size: 0.7rem; /* the font size of the text */
+}
+
+.side-links .item-list li a {
+    font-style: normal !important;
+}
+
+.side-links .item-list li .my-side-item svg {
+    width: 10px;
+    height: 10px;
+}
+
+.side-links .item-list li a:hover {
+    font-style: italic !important; /* Change to italic font style on hover */
+    font-style: bold; /* Change to bold font style on hover */
+    text-decoration: underline; /* Underline text on hover */
+    color: #7851A9; /* Change text color on hover */
+}
+
+.side-links .item-list li .my-side-item svg {
+    margin-right: 10px; /* Adds space between the icon and the text */
+    margin-left: 0.5rem;
+}
+
+
+/* Ensure the height of .side-links is automatically determined by its content */
+.side-links {
+    height: auto; /* Height adjusts based on content */
+    max-height: 100%; /* Prevents it from growing too large */
+}

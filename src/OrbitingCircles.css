@@ -1,0 +1,402 @@
+:root {
+  --animation-play-state: running;
+}
+
+.orbit-container {
+  top: var(--card-x) !important;
+  left: var(--card-y) !important;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease, top 1s ease;
+}
+
+
+/* the following disables the orbiting circles */
+.orbit-container.deactive {
+  display: none;
+}
+
+.orbit-container.orbit-top {
+  top: 10%;
+  transform: translateY(-40%);
+  transition: transform 1s ease-in-out;
+}
+
+.orbit-container.selected-child {
+  transform: translateY(-70%) !important;
+  transition: transform 1s ease-in-out;
+}
+
+.orbit-container.center-bottom {
+  top: auto;
+  transform: translateY(-40%) translateX(0%);
+}
+
+.orbit-inner,
+.orbit-outer {
+  position: absolute;
+  border: 1px dashed #858585;
+  border-spacing: 5px;
+  border-radius: 50%;
+  opacity: 70;
+}
+
+.orbit-outer {
+  width: 30rem;
+  height: 30rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit-image {
+  position: absolute;
+  cursor: pointer;
+}
+
+.orbit-inner {
+  width: 20rem;
+  height: 20rem;
+  z-index:1300;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.orbit-inner-1 {
+  transform: rotate(0deg) translateX(-160px) rotate(0deg);
+  animation: rotateImage1 40s linear infinite;
+}
+
+.orbit-inner-2 {
+  transform: rotate(-120deg) translateX(-165px) rotate(120deg);
+  animation: rotateImage2 40s linear infinite;
+}
+
+.orbit-inner-4 {
+  transform: rotate(-240deg) translateX(-165px) rotate(240deg);
+  animation: rotateImage4 40s linear infinite;
+}
+.orbit-outer-1 {
+  transform: rotate(0deg) translate(15rem) rotate(0deg);
+  animation: rotateImage5 40s linear infinite;
+}
+
+.orbit-outer-2 {
+  transform: rotate(120deg) translate(15rem) rotate(-118deg);
+  animation: rotateImage6 40s linear infinite;
+}
+
+.orbit-outer-3 {
+  transform: rotate(54deg) translate(-15rem) rotate(-53deg);
+  animation: rotateImage7 40s linear infinite;
+}
+
+@keyframes rotateImage1 {
+  0% {
+    transform: rotate(0deg) translateX(-160px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-160px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateImage2 {
+  0% {
+    transform: rotate(-120deg) translateX(-165px) rotate(120deg);
+  }
+  100% {
+    transform: rotate(240deg) translateX(-165px) rotate(-240deg);
+  }
+}
+
+@keyframes rotateImage4 {
+  0% {
+    transform: rotate(-240deg) translateX(-165px) rotate(240deg);
+  }
+  100% {
+    transform: rotate(120deg) translateX(-165px) rotate(-120deg);
+  }
+}
+
+@keyframes rotateImage5 {
+  0% {
+    transform: rotate(0deg) translate(15rem) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(15rem) rotate(-360deg);
+  }
+}
+
+@keyframes rotateImage6 {
+  0% {
+    transform: rotate(120deg) translate(15rem) rotate(-118deg);
+  }
+  100% {
+    transform: rotate(480deg) translate(15rem) rotate(-478deg);
+  }
+}
+
+@keyframes rotateImage7 {
+  0% {
+    transform: rotate(54deg) translate(-15rem) rotate(-53deg);
+  }
+  100% {
+    transform: rotate(414deg) translate(-15rem) rotate(-413deg);
+  }
+}
+
+/* .orbit-image.selected{
+  animation: none;
+
+} */
+
+/* .orbit-container.orbit-reset .orbit-image {
+  animation-play-state: paused;
+  transform: rotate(0deg);
+} */
+
+
+/* What happens when an item in the inner orbit is selected */
+.orbit-image.orbit-inner-1.selected,
+.orbit-image.orbit-inner-2.selected,
+.orbit-image.orbit-inner-4.selected {
+  transition: transform 0.5s ease;
+  transform: rotate(-92deg) translate(-24rem) rotate(93deg)  scale(1.5);
+}
+
+/* What happens when an item in the outer orbit is selected */
+.orbit-image.orbit-outer-1.selected,
+.orbit-image.orbit-outer-2.selected,
+.orbit-image.orbit-outer-3.selected {
+  transition: transform 0.5s ease;
+  transform: rotate(-92deg) translate(-24rem) rotate(93deg) scale(1.5);
+}
+
+.child-node.selectedchild {
+  width:66px;
+  height: 66px;
+  background-color: #7851A9;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.6);
+  color: #7851A9;
+  padding: 5px 10px; /* Adjusted padding for more space */
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 1200;
+  white-space: pre;
+  text-align: center;
+}
+
+
+.orbit-reset .orbit-inner,
+.orbit-reset .orbit-outer {
+  animation-play-state: paused;
+}
+
+.children-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+}
+
+.child-node {
+  position: relative;
+  width: max-content;
+  transition: transform 0.5s ease;
+  z-index: 100;
+}
+
+.selected-child-content {
+  position: absolute;
+  top: 90%;
+  width: 80%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+.orbit-container.orbit-reset .orbit-inner{
+  top: 3% !important;
+}
+
+.orbit-container.orbit-reset .selected-child-content{
+  top: 130% !important;
+}
+@media (max-width: 768px) {
+  .orbit-container.orbit-reset .orbit-inner{
+    top: 2% !important;
+  }
+  .orbit-container.orbit-reset .selected-child-content{
+    top: 150% !important;
+  }
+  .orbit-inner {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .orbit-outer {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .children-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  @keyframes rotateImage1 {
+    0% {
+      transform: rotate(0deg) translateX(-150px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes rotateImage2 {
+    0% {
+      transform: rotate(-120deg) translateX(-150px) rotate(120deg);
+    }
+    100% {
+      transform: rotate(240deg) translateX(-150px) rotate(-240deg);
+    }
+  }
+  
+  @keyframes rotateImage4 {
+    0% {
+      transform: rotate(-240deg) translateX(-150px) rotate(240deg);
+    }
+    100% {
+      transform: rotate(120deg) translateX(-150px) rotate(-120deg);
+    }
+  }
+  
+  @keyframes rotateImage5 {
+    0% {
+      transform: rotate(0deg) translate(12rem) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(12rem) rotate(-360deg);
+    }
+  }
+  
+  @keyframes rotateImage6 {
+    0% {
+      transform: rotate(120deg) translate(12rem) rotate(-118deg);
+    }
+    100% {
+      transform: rotate(480deg) translate(12rem) rotate(-478deg);
+    }
+  }
+  
+  @keyframes rotateImage7 {
+    0% {
+      transform: rotate(54deg) translate(-12rem) rotate(-53deg);
+    }
+    100% {
+      transform: rotate(414deg) translate(-12rem) rotate(-413deg);
+    }
+  }
+  .orbit-container.center-bottom {
+    top: auto;
+    transform: translateY(-30%) translateX(0%);
+  }
+  .tooltip {
+    white-space: pre-line;
+    text-align: center;
+  }
+  .orbit-image.orbit-outer-1.selected,
+  .orbit-image.orbit-outer-2.selected,
+  .orbit-image.orbit-outer-3.selected {
+    transition: transform 0.5s ease;
+    transform: translateX(15%) translateY(610%) rotate(0deg) scale(1.1);
+  }
+
+  .orbit-image.orbit-inner-1.selected,
+  .orbit-image.orbit-inner-2.selected,
+  .orbit-image.orbit-inner-4.selected {
+    transition: transform 0.5s ease;
+    transform: translateX(15%) translateY(610%) rotate(0deg) scale(1.1);
+  }
+  .child-node {
+    position: relative;
+    transition: transform 0.5s ease;
+    z-index: 100;
+    width: fit-content;
+    padding-left: 0px;
+    padding-right:0px;
+  }
+}
+
+.unselected-child {
+  transform: translatey(30%);
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeLine {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.grandchildren-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.child, .grandchild {
+  transition: transform 0.3s;
+}
+.selected-grandchild-content{
+  position: absolute;
+  top: 140%;
+  width: 80%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}

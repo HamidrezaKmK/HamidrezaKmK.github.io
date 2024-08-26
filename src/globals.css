@@ -1,0 +1,157 @@
+/* Define a custom class for special hyperlinks */
+.special-hyperref {
+    display: inline; /* Ensures the hyperlink stays inline with the text */
+    color: #7d57ac; /* Set the text color */
+    text-decoration: underline; /* Underline the link */
+    font-weight: bold; /* Make the link bold */
+    padding: 2px 4px; /* Optional: Add padding around the link */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+  
+.special-hyperref:hover {
+    color: white; /* Change color on hover */
+    background-color: #7d57ac; /* Invert background color on hover */
+    text-decoration: none;
+}
+
+
+a{
+    color: #7d57ac; 
+    font-weight: 400; 
+    font-family: 'Neufile Grotesk', sans-serif;
+    /* underline the link */
+    text-decoration: underline;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+p{
+    color: #464646; 
+    font-weight: 400; 
+    font-family: 'Neufile Grotesk', sans-serif;
+    font-size: 0.85rem;
+}
+
+.video-container {
+    text-align: center; /* Center align the entire video container */
+    margin: 20px 0; /* Optional: Add some margin around the container */
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center; /* Center the iframe inside the wrapper */
+}
+
+.video-container iframe {
+    max-width: 100%; /* Ensure the iframe is responsive */
+}
+
+.video-caption {
+    margin-top: 10px; /* Space between the video and caption */
+    font-size: 0.9em; /* Adjust the caption font size */
+    color: #555; /* Optional: Change caption text color */
+    /* italicize the caption */
+    font-style: italic;
+}
+
+
+.dated-item p {
+    margin: 0;
+    justify-content: space-between;
+    width: 300%;
+}
+
+.dated-item p::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Aligns the line with the left side */
+    top: 0;
+    bottom: 0;
+    width: 3px; /* Adjust the width of the vertical line */
+    background-color: gray; /* Set the color of the vertical line */
+}
+
+.dated-item .dated-item-date {
+    margin-left: auto; /* Pushes the date to the right */
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666; /* Optional: Change the color of the date */
+    /* set the width of the date */
+    width: 400px;
+    margin-left: 10px;
+    /* set the text inside to top */
+    vertical-align: top;
+}
+
+.dated-item {
+    list-style-type: disc; /* Adds a bullet point */
+    /* flex display */
+    display: flex;
+    margin-bottom: 5px; /* Space between news items */
+    position: relative; /* Allows positioning of date */
+    padding-left: 20px; /* Indent for bullet point */
+    justify-content: space-between;
+}
+
+
+.dated-item.publication p {
+    margin: 0 !important; /* Remove default margin */
+    justify-content: space-between !important; /* Space between date and text */
+    width: 100% !important; /* Ensure paragraphs take full width of the parent */
+}
+
+.dated-item.publication {
+    list-style-type: disc !important; /* Adds a bullet point */
+    display: flex !important;
+    flex-direction: column !important; /* Stack items vertically */
+    margin-bottom: 5px !important; /* Space between news items */
+    position: relative !important; /* Allows positioning of date */
+    padding-left: 20px !important; /* Indent for bullet point */
+    justify-content: flex-start !important; /* Align items to the top */
+}
+
+.dated-item.publication a.publication-venue {
+    /* make italics */
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+
+.dated-item.publication a.publication-venue.main-conference {
+    /* make bold */
+    font-weight: bold;
+}
+/* if not main conference then remove the bold */
+.dated-item.publication a.publication-venue:not(.main-conference) {
+    font-weight: normal;
+    /* remove underline */
+    text-decoration: none;
+}
+
+/* when hovering over not a main conference set color to some other color */
+.dated-item.publication a.publication-venue:not(.main-conference):hover {
+    background-color: #7d57ac72;
+}
+
+.dated-item.publication p.TLDR {
+    /* make font style normal */
+    font-style: normal;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.dated-item.publication p.publication-title {
+    /* make font style normal */
+    font-weight: bold;
+    font-size: 1.05m;
+}
+
+.dated-item.publication p.publication-authors {
+    /* make font style normal */
+    font-size: 0.8em;
+}
+
+
