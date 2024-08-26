@@ -5,3 +5,4 @@ docs/CV/*.synctex.gz
 node_modules
 
 .vscode
+.DS_Store
