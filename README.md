@@ -13,3 +13,11 @@ Currently, two official plugins are available:
 npm install gh-pages --save-dev
 npm run deploy
 ```
+
+## Maintenanace
+
+For preview:
+
+```bash
+npm run preview
+```
