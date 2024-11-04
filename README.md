@@ -19,5 +19,6 @@ npm run deploy
 For preview:
 
 ```bash
+npm run build
 npm run preview
 ```

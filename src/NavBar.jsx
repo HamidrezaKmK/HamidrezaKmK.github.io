@@ -9,7 +9,7 @@ const NavBar = ({ onNavClick }) => {
                     <button onClick={onNavClick} className="top-bar-link">Home</button>
                     <a href="./blog/index.html" className="top-bar-link">Blog</a>
                     <button onClick={onNavClick} className="top-bar-link">Publications</button>
-                    <a href="./CV_long.pdf" className="top-bar-link">CV</a>
+                    <a href="./CV.pdf" className="top-bar-link">CV</a>
               </nav>
         </>
     );
