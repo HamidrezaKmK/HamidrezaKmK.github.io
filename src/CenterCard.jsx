@@ -52,7 +52,7 @@ const CenterCard = ({ onClick , isTreeNode, mainPageRef}) => {
                         <li>
                             <a href="https://layer6.ai/" className="bullet-header">
                                 <span className="vertical-line"></span>
-                                Machine Learning Scientist
+                                Scientist & Model Developer
                             </a>
                         </li>
                         <li>
