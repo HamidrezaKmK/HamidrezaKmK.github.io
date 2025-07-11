@@ -7,7 +7,7 @@ const AboutTalksNews = () => {
     const [clickedAbout, setClickedAbout] = useState(false);
 
     const handleHover = () => {
-        setAboutText(clickedAbout ? 'Less About Me?' : 'More About Me?');
+        setAboutText(clickedAbout ? 'About Me?' : 'About Me?');
     };
 
     const handleLeave = () => {
@@ -22,7 +22,7 @@ const AboutTalksNews = () => {
     return (
         <main className="main-content">
             <>
-                <h1 
+                <h1
                     className="text-xl font-normal text-[#7851A9] font-header about-me"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleLeave}
@@ -31,15 +31,11 @@ const AboutTalksNews = () => {
                 >
                     {aboutText}
                 </h1>
-                {
-                    !clickedAbout ? 
-                    <ContentDisplay contentPaths={['./content/about_me/about_short.html']}/> :
-                    <ContentDisplay contentPaths={['./content/about_me/about.html']}/>
-                }
+                <ContentDisplay contentPaths={['./content/about_me/about.html']} />
                 <h2 className="text-xl font-normal text-[#7851A9] font-header">Talks</h2>
-                <ContentDisplay contentPaths={['./content/talks/talks.html']}/>
+                <ContentDisplay contentPaths={['./content/talks/talks.html']} />
                 <h2 className="text-xl font-normal text-[#7851A9] font-header">News</h2>
-                <ContentDisplay contentPaths={['./content/news/news.html']}/>
+                <ContentDisplay contentPaths={['./content/news/news.html']} />
             </>
         </main>
     );
@@ -49,7 +45,7 @@ const Publications = () => {
     return (
         <main className="main-content">
             <h2 className="text-xl font-normal text-[#7851A9] font-header">Publications</h2>
-            <ContentDisplay contentPaths={['./content/publications/list.html']}/>
+            <ContentDisplay contentPaths={['./content/publications/list.html']} />
         </main>
     );
 }

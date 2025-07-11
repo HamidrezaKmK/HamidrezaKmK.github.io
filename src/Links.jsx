@@ -3,16 +3,16 @@ import './Links.css'; // Create a separate CSS file for the CenterCard component
 
 const Links = () => {
 
-    return  (
+    return (
         <div className="side-links">
             <div className="list-links">
                 <h2 className="text-xl font-normal text-[#7851A9] font-header">Links</h2>
-                    
+
                 <ul className="item-list">
-                    <li>        
+                    <li>
                         <div className="my-side-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="#7851A9" viewBox="0 0 24 24"><path d="M12 2c-3.86 0-7 3.14-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                            Toronto, Canada
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#7851A9" viewBox="0 0 24 24"><path d="M12 2c-3.86 0-7 3.14-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                            Cambridge, MA U.S.
                         </div>
                     </li>
                     <li>

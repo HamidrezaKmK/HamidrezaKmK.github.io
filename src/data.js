@@ -4,7 +4,7 @@ const parents = [
         name: 'Projects',
         image: '/projects.png',
         children: [
-            { id: 11, name:  `Predicting Drug Dose <br> Responses Using GNNs <br> and Attention Mechanisms`, image: '/project1.png', content: `/content/project/project1.html` },
+            { id: 11, name: `Predicting Drug Dose <br> Responses Using GNNs <br> and Attention Mechanisms`, image: '/project1.png', content: `/content/project/project1.html` },
             { id: 12, name: `Semidefinite Programming <br> using a <br> Physarum Based Dynamic`, image: '/project2.png', content: `/content/project/project2.html` },
             { id: 13, name: `ML-Mnemonist`, image: '/project3.png', content: `/content/project/project3.html` },
             { id: 14, name: `Dental Panoramic <br> Image Reconstruction <br> and Tooth Segmentation`, image: '/project4.png', content: `/content/project/project4.html` },
@@ -38,17 +38,17 @@ const parents = [
             { id: 63, name: `Highlights`, image: '/highlight.png', content: `/content/about_me/highlight.html` },
         ]
     },
-    {
-        id: 4,
-        name: `Competitive <br> Programming`,
-        image: '/programming.png',
-        children: [
-            { id: 31, name: `Competitive Programming`, image: '/info.png', content: `/content/competitive_programming/competitive.html` },
-            { id: 32, name: `Awards`, image: '/award.png', content: `/content/competitive_programming/awards.html` },
-            { id: 33, name: `Mentorship`, image: '/mentor.png', content: `/content/competitive_programming/mentorship.html` },
-            { id: 34, name: `Olympiad`, image: '/olmpiyad.png', content: `/content/competitive_programming/olympiad.html` }
-        ]
-    },
+    // {
+    //     id: 4,
+    //     name: `Competitive <br> Programming`,
+    //     image: '/programming.png',
+    //     children: [
+    //         { id: 31, name: `Competitive Programming`, image: '/info.png', content: `/content/competitive_programming/competitive.html` },
+    //         { id: 32, name: `Awards`, image: '/award.png', content: `/content/competitive_programming/awards.html` },
+    //         { id: 33, name: `Mentorship`, image: '/mentor.png', content: `/content/competitive_programming/mentorship.html` },
+    //         { id: 34, name: `Olympiad`, image: '/olmpiyad.png', content: `/content/competitive_programming/olympiad.html` }
+    //     ]
+    // },
     {
         id: 5,
         name: `Industry`,
