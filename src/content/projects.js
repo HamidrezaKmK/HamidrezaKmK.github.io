@@ -1,25 +1,15 @@
 export default [
   {
-    "title": "Personal Website",
-    "description": "The source for this portfolio: a static React site with a local content editing mode.",
-    "href": "https://github.com/HamidrezaKmK/HamidrezaKmK.github.io",
+    "title": "Locked-In",
+    "description": "An AI-powered hub for researchers to manage literature, brainstorm insights, and stay 'locked in' via a seamless Slack-integrated workflow.",
+    "href": "https://github.com/HamidrezaKmK",
     "image": "/projects.png",
     "tags": [
-      "React",
-      "Vite",
-      "portfolio"
+      "Agents",
+      "Acedmia",
+      "Paper Manager",
+      "Brainstorming"
     ],
     "status": "Maintained"
-  },
-  {
-    "title": "Research Code and Tools",
-    "description": "A curated project card placeholder for a GitHub repository you want to highlight. Edit this in admin mode.",
-    "href": "https://github.com/HamidrezaKmK",
-    "image": "/programming.png",
-    "tags": [
-      "research",
-      "machine learning"
-    ],
-    "status": "Curate me"
   }
 ];

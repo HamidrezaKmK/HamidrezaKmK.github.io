@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ArrowLeft, Moon, Plus, Save, Sun, Trash2, Upload } from 'lucide-react';
+import { ArrowDown, ArrowLeft, ArrowUp, Eye, EyeOff, Moon, Plus, Save, Sun, Trash2, Upload } from 'lucide-react';
 import siteProfileData from './content/siteProfile.js';
 import homeData from './content/home.js';
 import aboutData from './content/about.js';
@@ -43,6 +43,8 @@ const initialContent = {
   projects: projectsData,
   videos: videosData,
 };
+
+const imageCapableCollections = new Set(['publications', 'blogPosts', 'projects']);
 
 const Field = ({ label, value, onChange, multiline = false, help }) => {
   const [mode, setMode] = useState('edit');
@@ -178,6 +180,26 @@ function AdminApp({ theme, setTheme }) {
     setContent((current) => ({ ...current, [active]: current[active].filter((_, itemIndex) => itemIndex !== index) }));
   };
 
+  const moveItem = (index, direction) => {
+    const target = index + direction;
+    setContent((current) => {
+      const list = current[active];
+      if (target < 0 || target >= list.length) return current;
+      const next = [...list];
+      [next[index], next[target]] = [next[target], next[index]];
+      return { ...current, [active]: next };
+    });
+  };
+
+  const toggleHidden = (index) => {
+    setContent((current) => ({
+      ...current,
+      [active]: current[active].map((item, itemIndex) => (
+        itemIndex === index ? { ...item, hidden: !item.hidden } : item
+      )),
+    }));
+  };
+
   const updateProfileLink = (index, field, value) => {
     const links = [...activeValue.links];
     links[index] = { ...links[index], [field]: value };
@@ -280,22 +302,50 @@ function AdminApp({ theme, setTheme }) {
             <div className="admin-list">
               <button className="button" onClick={addItem}><Plus size={16} />Add {contentConfig[active].title.slice(0, -1)}</button>
               {activeValue.map((item, index) => (
-                <article className="admin-card" key={index}>
+                <article className={`admin-card ${item.hidden ? 'is-hidden' : ''}`} key={index}>
                   <div className="admin-card-head">
-                    <h3>{item.title || item.date || `Item ${index + 1}`}</h3>
-                    <button className="icon-button danger" onClick={() => removeItem(index)} aria-label="Delete item">
-                      <Trash2 size={16} />
-                    </button>
+                    <h3>
+                      {item.title || item.date || `Item ${index + 1}`}
+                      {item.hidden && <span className="hidden-tag">Hidden</span>}
+                    </h3>
+                    <div className="admin-card-actions">
+                      <button className="icon-button" onClick={() => moveItem(index, -1)} disabled={index === 0} aria-label="Move up" title="Move up">
+                        <ArrowUp size={16} />
+                      </button>
+                      <button className="icon-button" onClick={() => moveItem(index, 1)} disabled={index === activeValue.length - 1} aria-label="Move down" title="Move down">
+                        <ArrowDown size={16} />
+                      </button>
+                      <button className="icon-button" onClick={() => toggleHidden(index)} aria-label={item.hidden ? 'Unhide item' : 'Hide item'} title={item.hidden ? 'Unhide' : 'Hide'}>
+                        {item.hidden ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </button>
+                      <button className="icon-button danger" onClick={() => removeItem(index)} aria-label="Delete item" title="Delete">
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
                   </div>
                   {Object.entries(item).map(([field, value]) => {
+                    if (field === 'hidden') return null;
+                    if (imageCapableCollections.has(active) && field === 'image') return null;
                     if (Array.isArray(value)) {
                       return <ArrayListField key={field} label={field} value={value} onChange={(next) => updateArrayItem(index, field, next)} />;
                     }
                     const multiline = ['markdown', 'html', 'tldr', 'description', 'caption', 'authors', 'venue'].includes(field);
                     return <Field key={field} label={field} value={value} multiline={multiline} onChange={(next) => updateArrayItem(index, field, next)} />;
                   })}
-                  {['image'].some((field) => field in item) && (
-                    <FileUpload label="Upload image" onUploaded={(path) => updateArrayItem(index, 'image', path)} />
+                  {imageCapableCollections.has(active) && (
+                    <div className="admin-media-field">
+                      <Field label="Image path" value={item.image || ''} onChange={(next) => updateArrayItem(index, 'image', next)} />
+                      <div className="admin-media-actions">
+                        <FileUpload label="Upload card image" onUploaded={(path) => updateArrayItem(index, 'image', path)} />
+                        <button
+                          className="button danger"
+                          onClick={() => updateArrayItem(index, 'image', '')}
+                          disabled={!item.image}
+                        >
+                          <Trash2 size={15} />Remove image
+                        </button>
+                      </div>
+                    </div>
                   )}
                 </article>
               ))}

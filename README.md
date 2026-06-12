@@ -52,11 +52,10 @@ Most longer text fields use Markdown. Common examples:
 - `- item` for simple lists
 
 
-## Build and Preview
+## Build
 
 ```bash
 npm run build
-npm run preview
 ```
 
 ## Deploy

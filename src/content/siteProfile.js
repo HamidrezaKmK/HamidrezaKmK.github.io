@@ -6,13 +6,9 @@ export default {
   "location": "Cambridge, MA",
   "email": "kamkarih@mit.edu",
   "photo": "/media/citations-1781232712093.jpg",
-  "favicon": "/media/citations-1781232712093.jpg",
+  "favicon": "/media/website-favicon-removebg-preview-1781237540557.png",
   "cv": "/CV.pdf",
   "links": [
-    {
-      "label": "GitHub",
-      "href": "https://github.com/HamidrezaKmK"
-    },
     {
       "label": "Google Scholar",
       "href": "https://scholar.google.com/citations?user=lWBWz48AAAAJ&hl=en"
@@ -27,8 +23,8 @@ export default {
     }
   ],
   "highlights": [
-    "Deep generative models",
+    "ML in Function Space",
     "Geometry",
-    "ML in Function Space"
+    "Deep generative models"
   ]
 };

@@ -39,6 +39,13 @@ const navItems = [
   { id: 'publications', label: 'Publications', icon: BookOpen },
 ];
 
+const pageIds = new Set(navItems.map((item) => item.id));
+
+const getPageFromHash = () => {
+  const hashPage = window.location.hash.replace(/^#\/?/, '');
+  return pageIds.has(hashPage) ? hashPage : 'home';
+};
+
 const useTheme = () => {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme');
@@ -119,15 +126,19 @@ const PaginationControls = ({ page, totalPages, onPageChange, itemLabel }) => {
 
   return (
     <div className="pager" aria-label={`${itemLabel} pagination`}>
-      <button onClick={() => onPageChange(0)} disabled={page === 0}>Most recent</button>
-      <button onClick={() => onPageChange(Math.max(0, page - 1))} disabled={page === 0}>
-        <ChevronLeft size={15} /> Previous
+      <button className="pager-icon" onClick={() => onPageChange(0)} disabled={page === 0} aria-label="Most recent page" title="Most recent">
+        <span aria-hidden="true">&lt;&lt;</span>
+      </button>
+      <button className="pager-icon" onClick={() => onPageChange(Math.max(0, page - 1))} disabled={page === 0} aria-label="Previous page" title="Previous">
+        <ChevronLeft size={16} />
       </button>
       <span>Page {page + 1} of {totalPages}</span>
-      <button onClick={() => onPageChange(Math.min(totalPages - 1, page + 1))} disabled={page === totalPages - 1}>
-        Next <ChevronRight size={15} />
+      <button className="pager-icon" onClick={() => onPageChange(Math.min(totalPages - 1, page + 1))} disabled={page === totalPages - 1} aria-label="Next page" title="Next">
+        <ChevronRight size={16} />
       </button>
-      <button onClick={() => onPageChange(totalPages - 1)} disabled={page === totalPages - 1}>Oldest</button>
+      <button className="pager-icon" onClick={() => onPageChange(totalPages - 1)} disabled={page === totalPages - 1} aria-label="Oldest page" title="Oldest">
+        <span aria-hidden="true">&gt;&gt;</span>
+      </button>
     </div>
   );
 };
@@ -146,8 +157,11 @@ const usePagination = (items, pageSize) => {
   };
 };
 
+const visible = (items) => items.filter((item) => !item.hidden);
+
 const NewsList = ({ limit, paginated = false, pageSize = 4 }) => {
-  const sourceItems = limit ? news.slice(0, limit) : news;
+  const visibleNews = visible(news);
+  const sourceItems = limit ? visibleNews.slice(0, limit) : visibleNews;
   const pagination = usePagination(sourceItems, pageSize);
   const items = paginated ? pagination.visibleItems : sourceItems;
 
@@ -174,8 +188,8 @@ const NewsList = ({ limit, paginated = false, pageSize = 4 }) => {
 };
 
 const VideoStrip = ({ paginated = false, pageSize = 2 }) => {
-  const pagination = usePagination(videos, pageSize);
-  const items = paginated ? pagination.visibleItems : videos;
+  const pagination = usePagination(visible(videos), pageSize);
+  const items = paginated ? pagination.visibleItems : visible(videos);
 
   return (
     <>
@@ -241,7 +255,7 @@ const BlogPage = () => (
       Notes, project, and thoughts I want to put out there!
     </SectionHeader>
     <div className="long-card-list">
-      {blogPosts.map((post) => (
+      {visible(blogPosts).map((post) => (
         <article className="media-card" key={post.title} onClick={() => openInSameTab(post.href)} tabIndex={0}>
           <img src={post.image} alt="" />
           <div>
@@ -267,7 +281,7 @@ const ProjectsPage = () => (
       Fun projects that are outside the scope of my work and I'm excited to share!
     </SectionHeader>
     <div className="project-grid">
-      {projects.map((project) => (
+      {visible(projects).map((project) => (
         <article className="project-card" key={project.title} onClick={() => openInSameTab(project.href)} tabIndex={0}>
           <img src={project.image} alt="" />
           <div className="project-card-body">
@@ -293,7 +307,7 @@ const PublicationsPage = () => (
       Selected papers and preprints.
     </SectionHeader>
     <div className="publication-list">
-      {publications.map((paper) => (
+      {visible(publications).map((paper) => (
         <article className={`publication-card ${paper.image ? 'with-image' : ''}`} key={paper.title}>
           {paper.image && <img src={paper.image} alt="" className="publication-thumb" />}
           <div>
@@ -309,7 +323,7 @@ const PublicationsPage = () => (
 );
 
 function App() {
-  const [page, setPage] = useState('home');
+  const [page, setPage] = useState(getPageFromHash);
   const [menuOpen, setMenuOpen] = useState(false);
   const [theme, setTheme] = useTheme();
   const isAdmin = useMemo(() => new URLSearchParams(window.location.search).has('admin'), []);
@@ -336,9 +350,19 @@ function App() {
   }[page];
 
   const selectPage = (nextPage) => {
+    window.location.hash = nextPage === 'home' ? '#/' : `#/${nextPage}`;
     setPage(nextPage);
     setMenuOpen(false);
   };
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setPage(getPageFromHash());
+      setMenuOpen(false);
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   return (
     <div className="site-shell">
@@ -355,6 +379,7 @@ function App() {
           <span className="brand-mark" aria-hidden="true" />
           <strong>Personal Profile</strong>
         </a>
+        <span className="brand-mobile">{siteProfile.shortName || siteProfile.name}</span>
         <nav className={menuOpen ? 'open' : ''} aria-label="Main navigation">
           {navItems.map(({ id, label, icon: Icon }) => (
             <button key={id} className={page === id ? 'active' : ''} onClick={() => selectPage(id)}>

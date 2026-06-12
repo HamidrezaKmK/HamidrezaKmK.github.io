@@ -1,7 +1,19 @@
 export default [
   {
+    "date": "June 2026",
+    "markdown": "I started a summer internship at [Toyota Research Institute](https://www.tri.global/)."
+  },
+  {
+    "date": "May 2026",
+    "markdown": "I am excited to share that our latest work, [Learning Orthonormal Bases for Function Spaces](https://arxiv.org/abs/2605.19959), is now available on arXiv! This paper represents a core milestone in my new research direction: optimizing representation spaces for functions. We introduce a novel neural architecture designed to produce an infinite sequence of orthonormal functions directly by construction."
+  },
+  {
+    "date": "May 2026",
+    "markdown": "Our work, [IV-ICL: Bounding Causal Effects with Instrumental Variables via In-Context Learning](https://arxiv.org/abs/2605.12924) is out on arxiv!"
+  },
+  {
     "date": "September 2025",
-    "markdown": "Our new work, [CausalPFN: Amortized Causal Effect Estimation via In-Context Learning](https://arxiv.org/abs/2506.07918), was accepted to NeurIPS 2025 as a **spotlight**. We are also excited that our work on tabular foundation models, [TabDPT](https://arxiv.org/pdf/2410.18164), was accepted to NeurIPS 2025 as well."
+    "markdown": "Our work, [CausalPFN: Amortized Causal Effect Estimation via In-Context Learning](https://arxiv.org/abs/2506.07918), was accepted to NeurIPS 2025 as a **spotlight**. We are also excited that our work on tabular foundation models, [TabDPT](https://arxiv.org/pdf/2410.18164), was accepted to NeurIPS 2025 as well."
   },
   {
     "date": "June 2025",
