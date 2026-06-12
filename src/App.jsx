@@ -281,22 +281,38 @@ const ProjectsPage = () => (
       Fun projects that are outside the scope of my work and I'm excited to share!
     </SectionHeader>
     <div className="project-grid">
-      {visible(projects).map((project) => (
-        <article className="project-card" key={project.title} onClick={() => openInSameTab(project.href)} tabIndex={0}>
-          <img src={project.image} alt="" />
-          <div className="project-card-body">
-            <div className="card-topline">
-              <span>{project.status}</span>
-              <ExternalLink size={15} />
+      {visible(projects).map((project) => {
+        const githubUrl = project.githubUrl || project.href;
+        const websiteUrl = project.websiteUrl;
+
+        return (
+          <article className="project-card" key={project.title}>
+            <img src={project.image} alt="" />
+            <div className="project-card-body">
+              <div className="project-card-top">
+                <span className="card-topline">{project.status}</span>
+                <div className="project-actions">
+                  {githubUrl && (
+                    <a className="external-icon-link" href={githubUrl} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} on GitHub`} title="GitHub">
+                      <Github size={17} />
+                    </a>
+                  )}
+                  {websiteUrl && (
+                    <a className="external-icon-link" href={websiteUrl} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} website`} title="Website">
+                      <ExternalLink size={17} />
+                    </a>
+                  )}
+                </div>
+              </div>
+              <h2>{project.title}</h2>
+              <MarkdownBlock markdown={project.description} />
+              <div className="tag-cloud compact">
+                {(project.tags || []).map((tag) => <span key={tag}>{tag}</span>)}
+              </div>
             </div>
-            <h2>{project.title}</h2>
-            <MarkdownBlock markdown={project.description} />
-            <div className="tag-cloud compact">
-              {(project.tags || []).map((tag) => <span key={tag}>{tag}</span>)}
-            </div>
-          </div>
-        </article>
-      ))}
+          </article>
+        );
+      })}
     </div>
   </section>
 );

@@ -29,7 +29,7 @@ const starterItems = {
   news: { date: 'Month Year', markdown: 'New update with **bold text** and [a link](https://example.com).' },
   publications: { title: 'Paper title', authors: 'Author list', venue: 'Venue', href: 'https://example.com', image: '', tldr: 'One-sentence summary.' },
   blogPosts: { title: 'Post title', tldr: 'Short description shown on the card.', image: '/media/example.png', href: 'https://example.com', date: '2026', tags: ['tag'] },
-  projects: { title: 'Repository name', description: 'Why this repository matters.', href: 'https://github.com/HamidrezaKmK', image: '/projects.png', tags: ['tag'], status: 'Maintained' },
+  projects: { title: 'Repository name', description: 'Why this repository matters.', githubUrl: 'https://github.com/HamidrezaKmK', websiteUrl: '', image: '/projects.png', tags: ['tag'], status: 'Maintained' },
   videos: { title: 'Video title', embedUrl: 'https://www.youtube.com/embed/video-id', caption: 'Short caption.' },
 };
 

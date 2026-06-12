@@ -568,10 +568,13 @@ a {
   cursor: pointer;
 }
 
-.media-card:hover,
-.project-card:hover {
+.media-card:hover {
   border-color: var(--accent);
   transform: translateY(-2px);
+}
+
+.project-card:hover {
+  border-color: var(--accent);
 }
 
 .media-card img,
@@ -619,8 +622,20 @@ a {
 }
 
 .project-card {
-  cursor: pointer;
   transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.project-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.project-actions {
+  display: inline-flex;
+  gap: 7px;
+  flex: 0 0 auto;
 }
 
 .publication-card {
