@@ -2,7 +2,7 @@ export default [
   {
     "title": "Generative Modeling through the Lens of Manifold Hypothesis",
     "embedUrl": "https://www.youtube.com/embed/ysvVrgqN9pg",
-    "caption": "Presentation of three of our works on generative models and manifold hypothesis.",
+    "caption": "Presentation of three of our works on generative models and manifold hypothesis at MIT visual computing seminar.",
     "hidden": false
   },
   {

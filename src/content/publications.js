@@ -36,7 +36,7 @@ export default [
     "authors": "Brendan Leigh Ross, Hamidreza Kamkari, Zhaoyan Liu, Tongzi Wu, George Stein, Gabriel Loaiza-Ganem, Jesse C. Cresswell",
     "venue": "ICLR 2025 (Spotlight)",
     "href": "https://arxiv.org/pdf/2411.00113",
-    "image": "",
+    "image": "/media/memorization-1781240732054.png",
     "tldr": "A geometric view of memorization through local intrinsic dimension and factors of variation."
   },
   {
@@ -44,27 +44,31 @@ export default [
     "authors": "Hamidreza Kamkari, Brendan Leigh Ross, Jesse C. Cresswell, Anthony L. Caterini, Rahul Krishnan, Gabriel Loaiza-Ganem",
     "venue": "ICML 2024",
     "href": "https://proceedings.mlr.press/v235/kamkari24a.html",
-    "tldr": "Explains why likelihood-based generative models can assign high likelihood to OOD data using manifold geometry."
+    "tldr": "Explains why likelihood-based generative models can assign high likelihood to OOD data using manifold geometry.",
+    "image": "/media/likelihood-ood-1781240721418.png"
   },
   {
     "title": "TabDPT: Scaling Tabular Foundation Models",
     "authors": "Junwei Ma, Valentin Thomas, Rasa Hosseinzadeh, Hamidreza Kamkari, Alex Labach, Jesse C. Cresswell, Keyvan Golestan, Guangwei Yu, Maksims Volkovs, Anthony L. Caterini",
     "venue": "NeurIPS 2025",
     "href": "https://arxiv.org/abs/2410.18164",
-    "tldr": "A tabular foundation model using self-supervised and in-context learning for strong generalization across datasets."
+    "tldr": "A tabular foundation model using self-supervised and in-context learning for strong generalization across datasets.",
+    "image": "/media/tabdpt-1781240764146.png"
   },
   {
     "title": "Order-based Structure Learning with Normalizing Flows",
     "authors": "Hamidreza Kamkari*, Vahid Balazadeh*, Vahid Zehtab, Aidan Li, Rahul G. Krishnan",
     "venue": "arXiv Preprint",
     "href": "https://arxiv.org/abs/2308.07480",
-    "tldr": "Uses masked autoregressive normalizing flows to learn ordering structure from observational data."
+    "tldr": "Uses masked autoregressive normalizing flows to learn ordering structure from observational data.",
+    "image": "/media/ocdaf-1781241158712.png"
   },
   {
     "title": "Physarum Inspired Dynamics to Solve Semi-Definite Programs",
     "authors": "Yuan Gao, Hamidreza Kamkari, Andreas Karrenbauer, Kurt Mehlhorn, Mohammadamin Sharifi",
     "venue": "arXiv Preprint",
     "href": "https://arxiv.org/abs/2111.02291",
-    "tldr": "Extends Physarum-inspired dynamics from linear programs to semidefinite programs."
+    "tldr": "Extends Physarum-inspired dynamics from linear programs to semidefinite programs.",
+    "image": "/media/eyjidwnrzxqioijsywjyb290cy1hc3nldhmilcjrzxkioijfchvibgljxc9fzmlszxncl3n5c3rlbvwvy2tcl3ryzw5kaw5nxc9hagfuzg91dhbpy3rfytmwytzkzwfjodlmyjezmjkwzddlnjuwmzdlmgnlnjkuanbniiwizwrpdhmionsicmvzaxplijp7indpzhroijoxndawlcjmaxqi-1781241152051.jpg"
   }
 ];

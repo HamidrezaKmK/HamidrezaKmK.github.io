@@ -310,11 +310,21 @@ const PublicationsPage = () => (
       {visible(publications).map((paper) => (
         <article className={`publication-card ${paper.image ? 'with-image' : ''}`} key={paper.title}>
           {paper.image && <img src={paper.image} alt="" className="publication-thumb" />}
-          <div>
-            <a href={paper.href} target="_blank" rel="noreferrer"><h2>{paper.title}</h2></a>
-            <p className="authors">{paper.authors}</p>
+          <div className="publication-card-body">
+            <div className="publication-head">
+              <h2>{paper.title}</h2>
+              {paper.href && (
+                <a className="external-icon-link" href={paper.href} target="_blank" rel="noreferrer" aria-label={`Open ${paper.title}`}>
+                  <ExternalLink size={17} />
+                </a>
+              )}
+            </div>
             <p className="venue"><GraduationCap size={15} />{paper.venue}</p>
-            <MarkdownBlock markdown={paper.tldr} />
+            <p className="authors">{paper.authors}</p>
+            <details className="publication-details">
+              <summary>Description</summary>
+              <MarkdownBlock markdown={paper.tldr} />
+            </details>
           </div>
         </article>
       ))}

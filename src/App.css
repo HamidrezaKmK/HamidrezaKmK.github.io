@@ -624,13 +624,13 @@ a {
 }
 
 .publication-card {
-  padding: 18px;
+  padding: 16px;
 }
 
 .publication-card.with-image {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 16px;
   align-items: start;
 }
 
@@ -653,6 +653,77 @@ a {
   gap: 8px;
   color: var(--accent-2);
   font-weight: 700;
+  margin: 6px 0 0;
+}
+
+.publication-card-body {
+  min-width: 0;
+}
+
+.publication-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.publication-head h2 {
+  margin-top: 0;
+  line-height: 1.25;
+}
+
+.external-icon-link {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--accent);
+  background: var(--panel-strong);
+  text-decoration: none;
+  transition: border-color 0.18s ease, transform 0.18s ease, background 0.18s ease;
+}
+
+.external-icon-link:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--panel-strong));
+  transform: translateY(-1px);
+}
+
+.publication-details {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.publication-details summary {
+  width: max-content;
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 10px;
+  color: var(--ink);
+  background: var(--panel-strong);
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+
+.publication-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.publication-details summary::after {
+  content: " +";
+  color: var(--accent);
+}
+
+.publication-details[open] summary::after {
+  content: " -";
+}
+
+.publication-details .authors {
+  margin-top: 12px;
 }
 
 .tag-cloud {
