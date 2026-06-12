@@ -15,7 +15,7 @@ export default [
   },
   {
     "title": "Optimized Cash Dashboard",
-    "description": "Why this repository matters.",
+    "description": "Managing finances with an LLM.",
     "githubUrl": "https://github.com/HamidrezaKmK/ocd",
     "websiteUrl": "https://cufflink-wisdom-gnat.ngrok-free.dev/",
     "image": "/media/1x-1-1781242414121.webp",
