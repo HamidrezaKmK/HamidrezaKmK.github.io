@@ -7,7 +7,7 @@ export default {
   "email": "kamkarih@mit.edu",
   "photo": "/media/citations-1781232712093.jpg",
   "favicon": "/media/website-favicon-removebg-preview-1781237540557.png",
-  "cv": "/CV.pdf",
+  "cv": "/media/mycv-1782394338197.pdf",
   "links": [
     {
       "label": "Google Scholar",

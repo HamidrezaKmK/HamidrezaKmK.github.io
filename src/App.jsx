@@ -226,7 +226,7 @@ const HomePage = ({ setPage }) => (
       </div>
       <div className="hero-actions">
         <button className="button primary" onClick={() => setPage('publications')}>Read publications</button>
-        <button className="button" onClick={() => setPage('projects')}>See projects</button>
+        <button className="button" onClick={() => setPage('blog')}>See blog</button>
       </div>
     </section>
     <section className="content-band">
@@ -421,7 +421,7 @@ function App() {
           {theme === 'dark' ? <Sun size={17} /> : <Moon size={17} />}
         </button>
       </header>
-      <main className="layout">
+      <main className={`layout page-${page}`}>
         <ProfilePanel />
         <div className="main-panel">
           <ActivePage setPage={selectPage} />

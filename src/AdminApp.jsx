@@ -257,7 +257,7 @@ function AdminApp({ theme, setTheme }) {
               <Field label="CV path" value={activeValue.cv} onChange={(value) => updateObjectField('cv', value)} />
               <FileUpload
                 label="Upload PDF"
-                accept="application/pdf"
+                accept=".pdf,application/pdf"
                 onUploaded={(path) => updateObjectField('cv', path)}
               />
               <ArrayListField label="Highlights" value={activeValue.highlights} onChange={(value) => updateObjectField('highlights', value)} />

@@ -1086,6 +1086,10 @@ a {
     display: flex;
   }
 
+  .layout:not(.page-home) .profile-panel {
+    display: none;
+  }
+
   .admin-tabs {
     display: flex;
     overflow-x: auto;
