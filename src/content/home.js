@@ -1,4 +1,4 @@
 export default {
   "eyebrow": "Overview",
-  "title": "Geometry, ML, and Physics"
+  "title": "Geometry for Learning and Inference"
 };

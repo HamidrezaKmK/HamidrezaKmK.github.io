@@ -1,5 +1,9 @@
 export default [
   {
+    "date": "August 2026",
+    "markdown": "Received the highly competitive [Schwarzman College of Computing PhD Fellowship](https://computing.mit.edu/scc-phd-fellowships/), an exclusive award providing full academic funding based on demonstrated excellence in research."
+  },
+  {
     "date": "June 2026",
     "markdown": "I started a summer internship at [Toyota Research Institute](https://www.tri.global/)."
   },

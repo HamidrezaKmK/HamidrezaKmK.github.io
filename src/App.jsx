@@ -241,7 +241,7 @@ const HomePage = ({ setPage }) => (
 );
 
 const AboutPage = () => (
-  <section className="content-band readable">
+  <section className="content-band readable about-page">
     <SectionHeader title="About Me" />
     <MarkdownBlock markdown={about.markdown || about.html} />
     <SectionHeader eyebrow="Updates" title="News" />
