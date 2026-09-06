@@ -1,10 +1,10 @@
 export default [
   {
     "title": "Locked-In",
-    "description": "An AI-powered hub for researchers to manage literature, brainstorm insights, and stay 'locked in' via a seamless Slack-integrated workflow.",
+    "description": "Lockedin was built out of my fascination — and frustration — working with AI for research. More often than not, my sessions turned into walls of text and jargon that neither I nor the agent could follow. Rather than automating research and replacing humans, Lockedin focuses on keeping them in the loop, and make agents good colleagues and collaborators, while enriching how they express their thoughts.",
     "githubUrl": "https://github.com/HamidrezaKmK/lockedin",
     "websiteUrl": "http://lockedin.codes/",
-    "image": "/media/891399-1781241973545.png",
+    "image": "/media/lockedin-logo.svg",
     "tags": [
       "Agents",
       "Acedmia",
