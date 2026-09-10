@@ -107,7 +107,7 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
   text-decoration: none;
   min-width: max-content;
 }
@@ -117,27 +117,29 @@ a {
 }
 
 /* The mark is the theme's own character -- a terminal in the dark, a
-   robot in the light. The terminal is drawn in the wordmark's own ink
-   so the pair reads as one lockup; the robot takes the accent. */
+   robot in the light. Mark and wordmark both take the accent so the
+   two read as one lockup. */
 .brand-mark {
   width: 30px;
   height: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--ink);
+  color: var(--accent);
   flex: 0 0 auto;
 }
 
-.brand-icon--robot {
-  color: var(--accent);
-}
-
+/* Set as a wordmark rather than a label: a step up in size and pulled
+   tight, which is what separates a logotype from the nav items it sits
+   beside. Space Grotesk's tall x-height carries the extra size without
+   crowding the mark. */
 .brand strong {
+  color: var(--accent);
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: -0.01em;
+  font-size: 1.16rem;
+  letter-spacing: -0.032em;
+  line-height: 1;
 }
 
 .site-nav nav {
@@ -199,7 +201,6 @@ a {
 
 /* Terminal cursor: a steady blink, the way a real prompt sits waiting. */
 .terminal-cursor {
-  color: var(--accent);
   animation: terminal-blink 1.1s steps(1, end) infinite;
 }
 
