@@ -12,8 +12,10 @@ import {
   Mail,
   MapPin,
   Menu,
+  Moon,
   Newspaper,
   PenTool,
+  Sun,
   X,
 } from 'lucide-react';
 import './App.css';
@@ -401,7 +403,9 @@ function App() {
           {menuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
         <a className="brand" href="." aria-label="Home">
-          <span className="brand-mark" aria-hidden="true" />
+          <span className="brand-mark" aria-hidden="true">
+            {theme === 'dark' ? <TerminalIcon size={28} /> : <MonkeyIcon size={28} />}
+          </span>
           <strong>Personal Profile</strong>
         </a>
         <span className="brand-mobile">{siteProfile.shortName || siteProfile.name}</span>
@@ -417,7 +421,7 @@ function App() {
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
         >
-          {theme === 'dark' ? <TerminalIcon /> : <MonkeyIcon />}
+          {theme === 'dark' ? <Sun size={17} /> : <Moon size={17} />}
         </button>
       </header>
       <main className={`layout page-${page}`}>
