@@ -204,55 +204,23 @@ a {
   56%, 100% { opacity: 0; }
 }
 
-/* The monkey dances: the body bops on the beat and the limbs swing on
-   the offbeat. Each limb pivots at its joint, which for a mirrored pair
-   means mirrored origins -- otherwise one arm swings from the hand. */
-.monkey,
-.monkey-limb {
-  transform-box: fill-box;
+/* The robot glances left, then right, then goes back to staring ahead.
+   The darts are quick and the stares are long, which is what makes it
+   read as looking at something rather than jittering. */
+.robot-eyes {
+  animation: robot-glance 6.5s ease-in-out infinite;
 }
 
-.monkey {
-  transform-origin: 50% 78%;
-  animation: monkey-bop 0.86s ease-in-out infinite;
-}
-
-.monkey-arm--l { transform-origin: 100% 100%; animation: monkey-swing-a 0.86s ease-in-out infinite; }
-.monkey-arm--r { transform-origin: 0% 100%; animation: monkey-swing-b 0.86s ease-in-out infinite; }
-.monkey-leg--l { transform-origin: 100% 0%; animation: monkey-step-a 0.86s ease-in-out infinite; }
-.monkey-leg--r { transform-origin: 0% 0%; animation: monkey-step-b 0.86s ease-in-out infinite; }
-
-@keyframes monkey-bop {
-  0%, 100% { transform: rotate(-4.5deg) translateY(0); }
-  25%      { transform: rotate(-1deg) translateY(-0.7px); }
-  50%      { transform: rotate(4.5deg) translateY(0); }
-  75%      { transform: rotate(1deg) translateY(-0.7px); }
-}
-
-@keyframes monkey-swing-a {
-  0%, 100% { transform: rotate(16deg); }
-  50%      { transform: rotate(-16deg); }
-}
-
-@keyframes monkey-swing-b {
-  0%, 100% { transform: rotate(-16deg); }
-  50%      { transform: rotate(16deg); }
-}
-
-@keyframes monkey-step-a {
-  0%, 100% { transform: rotate(-8deg); }
-  50%      { transform: rotate(8deg); }
-}
-
-@keyframes monkey-step-b {
-  0%, 100% { transform: rotate(8deg); }
-  50%      { transform: rotate(-8deg); }
+@keyframes robot-glance {
+  0%, 38%   { transform: translateX(0); }
+  43%, 53%  { transform: translateX(-0.9px); }
+  58%, 68%  { transform: translateX(0.9px); }
+  73%, 100% { transform: translateX(0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .terminal-cursor,
-  .monkey,
-  .monkey-limb {
+  .robot-eyes {
     animation: none;
   }
 }

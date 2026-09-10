@@ -30,7 +30,7 @@ import projects from './content/projects.js';
 import videos from './content/videos.js';
 import AdminApp from './AdminApp.jsx';
 import { renderMarkdown } from './utils/markdown.js';
-import { MonkeyIcon, TerminalIcon } from './ThemeToggleIcons.jsx';
+import { RobotIcon, TerminalIcon } from './BrandIcons.jsx';
 
 const navItems = [
   { id: 'home', label: 'Home', icon: Home },
@@ -404,7 +404,7 @@ function App() {
         </button>
         <a className="brand" href="." aria-label="Home">
           <span className="brand-mark" aria-hidden="true">
-            {theme === 'dark' ? <TerminalIcon size={28} /> : <MonkeyIcon size={28} />}
+            {theme === 'dark' ? <TerminalIcon size={28} /> : <RobotIcon size={28} />}
           </span>
           <strong>Personal Profile</strong>
         </a>
