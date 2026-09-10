@@ -117,8 +117,8 @@ a {
 }
 
 /* The mark is the theme's own character -- a terminal in the dark, a
-   monkey in the light -- drawn in the same ink as the wordmark beside
-   it so the two read as one lockup. */
+   robot in the light. The terminal is drawn in the wordmark's own ink
+   so the pair reads as one lockup; the robot takes the accent. */
 .brand-mark {
   width: 30px;
   height: 30px;
@@ -127,6 +127,10 @@ a {
   justify-content: center;
   color: var(--ink);
   flex: 0 0 auto;
+}
+
+.brand-icon--robot {
+  color: var(--accent);
 }
 
 .brand strong {
