@@ -192,6 +192,70 @@ a {
   background: var(--panel-strong);
 }
 
+/* Terminal cursor: a steady blink, the way a real prompt sits waiting. */
+.terminal-cursor {
+  color: var(--accent);
+  animation: terminal-blink 1.1s steps(1, end) infinite;
+}
+
+@keyframes terminal-blink {
+  0%, 55% { opacity: 1; }
+  56%, 100% { opacity: 0; }
+}
+
+/* The monkey dances: the body bops on the beat and the limbs swing on
+   the offbeat. Each limb pivots at its joint, which for a mirrored pair
+   means mirrored origins -- otherwise one arm swings from the hand. */
+.monkey,
+.monkey-limb {
+  transform-box: fill-box;
+}
+
+.monkey {
+  transform-origin: 50% 78%;
+  animation: monkey-bop 0.86s ease-in-out infinite;
+}
+
+.monkey-arm--l { transform-origin: 100% 100%; animation: monkey-swing-a 0.86s ease-in-out infinite; }
+.monkey-arm--r { transform-origin: 0% 100%; animation: monkey-swing-b 0.86s ease-in-out infinite; }
+.monkey-leg--l { transform-origin: 100% 0%; animation: monkey-step-a 0.86s ease-in-out infinite; }
+.monkey-leg--r { transform-origin: 0% 0%; animation: monkey-step-b 0.86s ease-in-out infinite; }
+
+@keyframes monkey-bop {
+  0%, 100% { transform: rotate(-4.5deg) translateY(0); }
+  25%      { transform: rotate(-1deg) translateY(-0.7px); }
+  50%      { transform: rotate(4.5deg) translateY(0); }
+  75%      { transform: rotate(1deg) translateY(-0.7px); }
+}
+
+@keyframes monkey-swing-a {
+  0%, 100% { transform: rotate(16deg); }
+  50%      { transform: rotate(-16deg); }
+}
+
+@keyframes monkey-swing-b {
+  0%, 100% { transform: rotate(-16deg); }
+  50%      { transform: rotate(16deg); }
+}
+
+@keyframes monkey-step-a {
+  0%, 100% { transform: rotate(-8deg); }
+  50%      { transform: rotate(8deg); }
+}
+
+@keyframes monkey-step-b {
+  0%, 100% { transform: rotate(8deg); }
+  50%      { transform: rotate(-8deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terminal-cursor,
+  .monkey,
+  .monkey-limb {
+    animation: none;
+  }
+}
+
 .layout {
   width: 100%;
   max-width: 1200px;

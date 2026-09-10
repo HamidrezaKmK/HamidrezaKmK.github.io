@@ -12,10 +12,8 @@ import {
   Mail,
   MapPin,
   Menu,
-  Moon,
   Newspaper,
   PenTool,
-  Sun,
   X,
 } from 'lucide-react';
 import './App.css';
@@ -30,6 +28,7 @@ import projects from './content/projects.js';
 import videos from './content/videos.js';
 import AdminApp from './AdminApp.jsx';
 import { renderMarkdown } from './utils/markdown.js';
+import { MonkeyIcon, TerminalIcon } from './ThemeToggleIcons.jsx';
 
 const navItems = [
   { id: 'home', label: 'Home', icon: Home },
@@ -418,7 +417,7 @@ function App() {
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
         >
-          {theme === 'dark' ? <Sun size={17} /> : <Moon size={17} />}
+          {theme === 'dark' ? <TerminalIcon /> : <MonkeyIcon />}
         </button>
       </header>
       <main className={`layout page-${page}`}>
