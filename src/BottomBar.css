@@ -21,7 +21,7 @@
 }
 
 .bottom-bar a {
-    color: #eee0fb; /* Link color */
+    color: var(--accent-2); /* Link color */
     text-decoration: none; /* Remove underline */
     font-style: normal; /* Ensure text is not italic */
 }

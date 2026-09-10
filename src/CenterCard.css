@@ -122,7 +122,7 @@
     width: 60%;
     height: 100%;
     border-radius: 50%;
-    background-color: rgba(120, 81, 169, 0.5); /* Purple color with transparency */
+    background-color: rgba(75, 209, 110, 0.45); /* Accent green with transparency */
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     pointer-events: none; /* Ensures it doesn't interfere with click events */
@@ -190,7 +190,7 @@
 }
 
 .bullet-header:hover {
-    color: #7851A9; /* Change to purple on hover */
+    color: var(--accent); /* Change to accent green on hover */
     /* bold the text on hover */
     font-weight: bold;
 }
@@ -207,7 +207,7 @@
 }
 
 .bullet-header:hover::before {
-    background-color: #7851A9; /* Change to purple on hover */
+    background-color: var(--accent); /* Change to accent green on hover */
 }
 
 /* Prevent font size and child dimensions from changing with zoom */
