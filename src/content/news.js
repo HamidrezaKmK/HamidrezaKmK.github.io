@@ -1,5 +1,9 @@
 export default [
   {
+    "date": "September 2026",
+    "markdown": "Our paper [Learning Orthonormal Bases for Function Spaces](https://arxiv.org/abs/2605.19959) was accepted to **NeurIPS 2026** as a poster."
+  },
+  {
     "date": "August 2026",
     "markdown": "Received the highly competitive [Schwarzman College of Computing PhD Fellowship](https://computing.mit.edu/scc-phd-fellowships/), an exclusive award providing full academic funding based on demonstrated excellence in research."
   },
