@@ -2,7 +2,7 @@ export default [
   {
     "title": "Learning Orthonormal Bases for Function Spaces",
     "authors": "Hamidreza Kamkari, Mohammad Sina Nabizadeh, Justin Solomon",
-    "venue": "arXiv Preprint",
+    "venue": "NeurIPS 2026",
     "href": "https://arxiv.org/abs/2605.19959",
     "image": "/media/bases4spaces-1781238029728.png",
     "tldr": "We introduce a framework to parameterize and optimize infinite-dimensional orthonormal bases as neural ODEs on the Lie manifold, allowing standard bases (like Fourier) to adapt to specific datasets or physical laws while remaining perfectly orthonormal."
